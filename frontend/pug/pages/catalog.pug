@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Каталог
+    link(rel="stylesheet", href="styles/scripts/bootstrap.css")
+    link(rel="stylesheet", href="styles/scripts/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/scripts/main.css")
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                span.
+                  Каталог
+        h1.page-h1 Каталог
+        .catalog
+          .row
+            .grid
+              .grid-sizer
+              .grid-item.grid-big 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-heading Технический керамогранит
+                    .grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+                      |Технический керамогранит — 
+                      |самый совершенный вид керамогранита, керамика будущего. 
+                      |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                      |Не имеет ограничений в областях применения.
+              .grid-item.grid-tall 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-heading Технический керамогранит
+                    .grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+                      |Технический керамогранит — 
+                      |самый совершенный вид керамогранита, керамика будущего. 
+                      |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                      |Не имеет ограничений в областях применения.
+              .grid-item 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-heading Технический керамогранит
+                    .grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+              .grid-item 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-heading Технический керамогранит
+                    .grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+              .grid-item.grid-long 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-heading Технический керамогранит
+                    .grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+                      |Технический керамогранит — 
+                      |самый совершенный вид керамогранита, керамика будущего. 
+                      |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                      |Не имеет ограничений в областях применения.
+          p.page-p.
+            Один из сильнейших конкурентов на российском рынке строительных материалов – 
+            компания Керамика Будущего, которая, несмотря на молодость, уже успела 
+            выбиться в лидеры среди производителей керамического гранита. Открытие завода 
+            компании состоялось в начале сентября 2014 года в Калужской области. 
+          p.page-p.
+            В арсенале производителя лучшее техническое оснащение, которое позволяет 
+            выпускать новейший строительный материал. Кредо компании – инвестиции 
+            в инновации, которые дадут возможность разрабатывать и внедрять в производство 
+            все новые способы создания высокопрочных и качественных облицовочных материалов. 
+            Сегодня компания SF Systems Керамика Будущего считается одним из передовых 
+            производств керамогранита в Европе. 
+          p.page-p.
+            В арсенале производителя лучшее техническое оснащение, которое позволяет 
+            выпускать новейший строительный материал. Кредо компании – инвестиции 
+            в инновации, которые дадут возможность разрабатывать и внедрять.
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

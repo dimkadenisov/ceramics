@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/swiper.min.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Главная</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="d-none d-lg-block top-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a data-fancybox="data-fancybox" data-src="#popup-ask-question" href="javascript:;">Задать вопрос</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-line">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto"><i class="d-inline-block d-lg-none middle-line-burger-menu"></i>
+                        <div class="logo"><a class="logo-link" href="#"><img class="logo-img" src="assets/img/logo.svg" alt="logo" /></a></div>
+                        <div class="d-none d-lg-inline-block description"><span class="description-text">Интернет-магазин<br>профессионального керамогранита</span></div>
+                        <div class="nav-list-scrolled-wrapper">
+                            <ul class="d-none row nav-list-scrolled">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Готовые решения</a></li>
+                                <li><a href="#">Шоурум</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form class="d-none d-sm-inline-block search-form align-middle"><i class="d-none d-sm-inline-block d-xl-none search-form-icon"></i><input class="d-none d-xl-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-none d-xl-block search-form-button" type="submit" value="" /></form>
+                        <div class="hot-line align-middle"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a>
+                            <p class="d-lg-block d-none hot-line-text">Звонок по России бесплатный</p>
+                            <div class="shopping-basket"><a href="#"><span class="shopping-basket-count">17</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="d-none d-lg-block bottom-nav">
+            <div class="container">
+                <ul class="row justify-content-xl-start justify-content-xxl-center bottom-nav-list">
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Каталог</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Готовые решения</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Шоурум</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Где купить</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Партнерам</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown d-lg-none">
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <form class="search-form search-form-dropdown"><input class="d-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-block search-form-button" type="submit" value="" /></form>
+                <ul class="col-auto dropdown-list">
+                    <li><a class="dropdown-list-link isparent" href="#">Каталог</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог <span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Hello</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link isparent" href="#">Готовые решения</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог<span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Технический керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link" href="#">Шоурум</a></li>
+                    <li><a class="dropdown-list-link" href="#">Где купить</a></li>
+                    <li><a class="dropdown-list-link" href="#">Партнерам</a></li>
+                    <li><a class="dropdown-list-link" href="#">О компании</a></li>
+                    <li><a class="dropdown-list-link" href="#">Полезная информация</a></li>
+                    <li><a class="dropdown-list-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hot-line-tel-dropdown-wrapper">
+                <div class="container"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a></div>
+            </div>
+        </div>
+    </div>
+    <main class="delete-margin">
+        <div class="index">
+            <div class="container">
+                <div class="row">
+                    <div class="overview">
+                        <div class="overview-sizer"></div>
+                        <div class="overview-item overview-big overview-item-swiper-parent">
+                            <div class="overview-item-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="overview-item-swiper-slide" style="background-image: url(assets/img/sample-image-2.png)">
+                                        <div class="overview-item-swiper-slide-content"><span>Новая коллекция керамическая плитка</span>
+                                            <span class="overview-item-swiper-slide-content-heading">Керамика будущего</span>
+                                            <p>Один из сильнейших конкурентов на российском рынке строительных
+                                                материалов – компания Керамика Будущего, которая, несмотря</p><a href="#">Подробнее<i></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="overview-item-swiper-slide" style="background-image: url(assets/img/sample-image-2.png)"></div>
+                                    <div class="overview-item-swiper-slide" style="background-image: url(assets/img/sample-image-2.png)"></div>
+                                </div>
+                                <div class="d-none d-md-block overview-item-swiper-button overview-item-swiper-button-prev"></div>
+                                <div class="d-none d-md-block overview-item-swiper-button overview-item-swiper-button-next"></div>
+                                <div class="overview-item-swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="overview-item-content">
+                                <div class="overview-item-content-img" style="background-image: url(assets/img/sample-image-3.png)"></div>
+                                <div class="grid-item-overlay"></div>
+                                <div class="overview-item-content-text"><i class="overview-item-content-icon" style="background-image: url(assets/img/icons/rectangles.svg)"></i><span class="overview-item-content-heading">каталог</span><a class="overview-item-content-button" href="#">Подобрать по&nbsp;параметрам<i></i></a></div>
+                            </div>
+                        </div>
+                        <div class="overview-item">
+                            <div class="overview-item-content">
+                                <div class="overview-item-content-img" style="background-image: url(assets/img/sample-image-4.png)"></div>
+                                <div class="grid-item-overlay"></div>
+                                <div class="overview-item-content-text"><span class="overview-item-content-heading">Готовые решения</span><a class="overview-item-content-button" href="#">Купить с&nbsp;максимальной выгодой<i></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ready-cases">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span class="block-name">Готовые решения</span></div>
+                        <div class="grid">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item text-item">
+                                <div class="text-item-text-wrapper">
+                                    <div class="text-item-text"><span>Лаборатория</span><span class="text-item-text-orange">по созданию собственного проекта</span><span class="d-inline d-sm-none d-md-inline">на базе готового решения</span><a href="#">Создай свой проект прямо сейчас<i></i></a></div>
+                                </div>
+                            </div>
+                            <div class="grid-item"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-5.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Базальт</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item grid-big"> <a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-6.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Колла</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-7.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Вуд эго</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-8.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Вуд классик</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showroom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span class="block-name">Шоурум</span>
+                            <div class="showroom-item">
+                                <div class="grid-item-overlay"></div>
+                                <div class="showroom-item-img" style="background-image: url(assets/img/sample-image-9.png)"></div>
+                                <div class="showroom-item-text"><span>Новая коллекция керамическая плитка</span><span class="showroom-item-text-bold">Керамика будущего</span>
+                                    <p>Один из сильнейших конкурентов на российском рынке строительных
+                                        материалов – компания Керамика Будущего, которая, несмотря </p><a href="#">Подробнее<i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-collections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span class="block-name">Полпулярные коллекции</span></div>
+                        <div class="grid">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-10.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Базальт</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item grid-item-new"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-11.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Колла</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item"><a class="grid-item-content" href="#">
+                                    <div class="grid-item-overlay"></div>
+                                    <div class="grid-item-img" style="background-image: url(assets/img/sample-image-12.png)"></div>
+                                    <div class="grid-item-text"><span class="grid-item-text-heading">Вуд эго</span>
+                                        <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    </div>
+                                </a></div>
+                            <div class="grid-item text-item">
+                                <div class="text-item-text-wrapper">
+                                    <div class="text-item-text"><span class="text-item-text-orange">Насыщенный дизайн</span><span>профессионального качества</span><a href="#">Создай свой проект прямо сейчас<i></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span class="block-name block-name-white">Статьи</span><a class="articles-button" href="#">Архив статей<i></i></a></div>
+                        <div class="articles-content">
+                            <div class="swiper-wrapper">
+                                <div class="articles-content-item"><a href="#">
+                                        <div class="articles-content-item-img" style="background-image: url(assets/img/sample-image-13.png)"></div><span>Какую поверхность керамогранита выбрать? Матовую, структурную, лаппатированную, полированную?</span>
+                                    </a></div>
+                                <div class="articles-content-item"><a href="#">
+                                        <div class="articles-content-item-img" style="background-image: url(assets/img/sample-image-14.png)"></div><span>Декорированный керамический гранит ИДАЛЬГО </span>
+                                    </a></div>
+                                <div class="articles-content-item"><a href="#">
+                                        <div class="articles-content-item-img" style="background-image: url(assets/img/sample-image-15.png)"></div><span>Что такое ПРО керамогранит?</span>
+                                    </a></div>
+                                <div class="articles-content-item"><a href="#">
+                                        <div class="articles-content-item-img" style="background-image: url(assets/img/sample-image-16.png)"></div><span>Керамический гранит. Размеры - дизайн - структура - фасад</span>
+                                    </a></div>
+                            </div>
+                            <div class="d-flex d-md-none articles-content-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img" style="background-image: url(assets/img/sample-image-18.png)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-xl-5">
+                            <div class="why-future-ceramics"><span class="block-name">Почему Керамика будущего?</span>
+                                <hr class="d-none d-md-block" />
+                                <p>Один из сильнейших конкурентов на российском рынке
+                                    строительных материалов – компания Керамика Будущего,
+                                    которая, несмотря на молодость, уже успела выбиться
+                                    в лидеры среди производителей керамического гранита.
+                                    Открытие завода компании состоялось в начале сентября
+                                    2014 года в Калужской области.</p>
+                                <p>В арсенале производителя лучшее техническое оснащение,
+                                    которое позволяет выпускать новейший строительный материал.
+                                    Кредо компании – инвестиции в инновации, которые дадут
+                                    возможность разрабатывать и внедрять в производство все
+                                    новые способы создания высокопрочных и качественных
+                                    облицовочных материалов. Сегодня компания SF Systems
+                                    Керамика Будущего считается одним из передовых производств
+                                    керамогранита в Европе</p>
+                                <p>В арсенале производителя лучшее техническое оснащение,
+                                    которое позволяет выпускать новейший строительный материал.
+                                    Кредо компании – инвестиции в инновации, которые дадут
+                                    возможность разрабатывать и внедрять.</p><a href="#">Подробнее<i></i></a>
+                                <div class="why-future-ceramics-background" style="background-image: url(assets/img/sample-image-18.png)"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 offset-xl-1">
+                            <div class="news">
+                                <div class="row">
+                                    <div class="col-12 col-xxl-6"><span class="block-name">Новости</span><a class="news-button" href="#">Архив новостей<i></i></a>
+                                        <div class="news-block">
+                                            <div class="news-block-item">
+                                                <hr class="d-none d-md-block" /><span class="news-block-item-date">1 июля 2018</span><a class="news-block-item-name" href="#">Приглашаем посетить наш стенд на 23-й международной
+                                                    специализированной выставке ВолгаСтройЭкспо</a></div>
+                                            <div class="news-block-item">
+                                                <hr class="d-none d-md-block" /><span class="news-block-item-date">21 июня 2018</span><a class="news-block-item-name" href="#">Приглашаем посетить наш стенд на 24-ой
+                                                    крупнейшей в России</a></div>
+                                            <div class="news-block-item">
+                                                <hr class="d-none d-md-block" /><span class="news-block-item-date">21 июня 2018</span><a class="news-block-item-name" href="#">Приглашаем посетить наш стенд на 24-ой
+                                                    крупнейшей в России</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-xxl-block col-6">
+                                        <div class="news-block-item">
+                                            <div class="news-block-item-img" style="background-image: url(assets/img/sample-image-17.png)"></div><a class="news-block-item-name news-block-item-name-big" href="#">Керамика будущего /
+                                                IDALGO Фотоотчет
+                                                с выставки BATIMAT 2018</a><span class="news-block-item-date">21 июня 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map"><span class="d-inline-block d-sm-none block-name map-buy-name">Где купить?</span>
+                <div class="map-container" style="background-image: url(assets/img/sample-image-19.png)">
+                    <div class="d-lg-none map-container-scroll"></div>
+                </div>
+                <div class="map-tooltip">
+                    <div class="map-tooltip-content">
+                        <div class="map-tooltip-content-img" style="background-image: url(assets/img/sample-image-20.png)"></div><span class="map-tooltip-content-place">Шоурум РОССИЯ, г. Москва</span><span class="map-tooltip-content-description">Пресненская набережная 12, Башня Федерация "Восток"</span><span class="map-tooltip-content-description">тел: <a href="tel:+7 495 789-45-16">+7 495 789-45-16</a></span><span class="map-tooltip-content-description"> <a href="mailto:msk@uralgres.com">msk@uralgres.com</a></span>
+                    </div>
+                </div>
+                <div class="map-buy">
+                    <div class="d-none d-sm-block block-name map-buy-name"> <span>Где купить?</span></div>
+                    <div class="map-buy-places">
+                        <div class="swiper-wrapper">
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                            <div class="map-buy-places-item-wrapper"><a class="map-buy-places-item" href="#"><span class="map-buy-places-item-name">Шоурум</span><span class="map-buy-places-adress">г. Москва, Пресненская набережная 12,
+                                        Башня Федерация "Восток"</span></a></div>
+                        </div>
+                        <div class="d-none d-lg-block swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup-content" id="popup-ask-question"><span class="popup-content-heading">Задать вопрос</span>
+        <form class="popup-content-form"><input class="popup-content-form-input" type="text" placeholder="Ваше имя" /><input class="popup-content-form-input" type="tel" placeholder="Ваш телефон" /><input class="popup-content-form-input" type="email" placeholder="Ваш e-mail" /><textarea class="popup-content-form-textarea" type="text" placeholder="Ваш вопрос"></textarea><button class="popup-content-form-button">ОТПРАВИТЬ</button><label class="catalog-filter-container">Нажимая кнопку «Отправить»,я даю свое согласие на обработку персональных данных<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label></form>
+    </div>
+    <footer class="footer">
+        <div class="subscribtion">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center subscribtion-heading"><i class="subscribtion-heading-icon"></i><span class="subscribtion-heading-text">Подпишитесь&nbsp;на&nbsp;новости:</span></div>
+                    <form class="subscribtion-form"><input class="subscribtion-form-input" type="email" placeholder="Ваш e-mail" /><input class="subscribtion-form-button" type="submit" value="Подписаться" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="separator gradient"></div>
+            <div class="row footer-content">
+                <div class="d-none d-lg-block col-lg-9 col-xxl-6 footer-content-left">
+                    <div class="row">
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Керамика Будущего</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">О компании</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Новости</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Преимущества </a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Реквизиты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Покупателю</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Политика конфиденциальности</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Как заказать</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Оплата и доставка</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Возврат</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Обратная связь</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Полезная информация</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Статьи</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Сертификаты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Способы укладки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xxl-3 offset-xxl-3 footer-content-right">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-12"><span class="footer-content-column-heading">Следите за нами в соцсетях</span>
+                            <div class="footer-content-column-links"><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/youtube.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/ok.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/vk.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/facebook.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/twitter.svg)"></i></a></div>
+                        </div>
+                        <div class="d-none d-md-block col offset-md-1 offset-lg-0 footer-content-column"><span class="footer-content-column-heading">Принимаем к оплате</span>
+                            <div class="footer-content-column-links"><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/visa.svg)"></i><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/mastercard.svg)"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row justify-content-between py-3"><span class="col-auto footer-copyright-info">© 2018 Все права защищены.</span>
+                <div class="col-auto footer-copyright-developers"><span>Разработка сайта — </span><a class="footer-copyright-developers-link" href="#" target="blank">АйТи-Эскорт</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

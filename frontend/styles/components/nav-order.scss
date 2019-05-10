@@ -1,0 +1,447 @@
+/*________ .nav-order ________*/
+// .nav-order {
+// background: $gray-100;
+// padding: 29px 30px;
+// display: flex;
+// // align-items: flex-start;
+// flex-wrap: wrap;
+// justify-content: space-between;
+// font: 15px "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+
+// &-item {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   flex-shrink: 0;
+
+//   &:first-child {
+//     // max-width: 432px;
+//   }
+// }
+
+// &-shell {
+//   display: flex;
+//   align-items: center;
+// }
+
+// &-select {
+//   width: 225px;
+// }
+
+// &-btn {
+//   margin-top: 24px;
+// }
+
+// &-title {
+//   flex-basis: 70%;
+//   margin-bottom: 8px;
+// }
+
+//   & input {
+//     color: $gray-700;
+//     font-size: 15px;
+//     height: 50px;
+//     background-color: #ffffff;
+//     padding: 0;
+//     text-align: center;
+//     border: solid 3px #f1f1f1;
+//     outline: none;
+//     margin-right: 2px;
+//     font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+
+//     &.year {
+//       width: 64px;
+//     }
+//   }
+// }
+
+// .input-part {
+//   display: flex;
+
+//   & > span {
+//     display: none;
+//   }
+// }
+
+// .hr-line {
+//   margin: 0 15px 0 10px;
+//   display: inline-block;
+// }
+
+// .btn-def {
+//   padding: 10px 27px;
+//   display: block;
+//   text-transform: uppercase;
+//   font-family: "Merriweather", "Times New Roman", "Times", serif;
+//   font-size: 14px;
+//   color: $gray-700;
+//   border: solid 3px $gray-700;
+//   text-align: center;
+//   cursor: pointer;
+//   margin: 5px;
+//   transition: 0.3s;
+// }
+
+// .btn-gray {
+//   background: $gray-700;
+//   color: $white;
+
+//   &:hover {
+//     background: #484747;
+//     border-color: #484747;
+//   }
+// }
+
+/**SELECT**/
+// .select-shell {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 46px;
+//     width: 3px;
+//     height: 100%;
+//     background: #f1f1f1;
+//   }
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     width: 50px;
+//     height: 100%;
+//     background: url(../assets/img/icons/arrow-down.svg) no-repeat 50%;
+//     background-size: 10px;
+//     pointer-events: none;
+//   }
+// }
+
+// select {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   border: solid 3px #f1f1f1;
+//   border-radius: 0;
+//   height: 50px;
+//   width: 225px;
+//   padding: 10px 20px;
+//   font: 15px "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+//   outline: none;
+//   cursor: pointer;
+//   background: $white;
+
+//   &:active {
+//     outline: none;
+//   }
+// }
+
+// select::-ms-expand {
+//   display: none;
+// }
+
+// /**END SELECT**/
+
+
+// @media (max-width: 1580px) {
+//   .nav-order-btn {
+//     flex-basis: 100%;
+//     justify-content: center;
+//   }
+// }
+
+// @media (max-width: 991px) {
+//   .nav-order-input {
+//     width: calc(100% - 220px);
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   .nav-order-select {
+//     width: 100%;
+//   }
+
+//   .nav-order-input {
+//     width: 100%;
+//     max-width: 100%;
+//     justify-content: space-between;
+//   }
+
+//   .nav-order-shell {
+//     flex-wrap: wrap;
+//   }
+
+//   .nav-order-item:first-child {
+//     max-width: 100%;
+//   }
+
+//   .input-part {
+//     margin-bottom: 10px;
+//   }
+
+//   .customSelect {
+//     width: 100%;
+//   }
+
+//   .btn-def {
+//     margin-left: 8px;
+//     margin-right: 8px;
+//   }
+
+//   .select-shell {
+//     width: 100%;
+//   }
+
+//   .select-shell select {
+//     width: 100%;
+//   }
+
+//   .btn-add {
+//     padding: 9px 15px;
+//   }
+// }
+
+// @media (max-width: 575px) {
+//   .nav-order {
+//     padding: 30px 15px;
+//   }
+
+//   .nav-order-item {
+//     width: 100%;
+//     margin-bottom: 30px;
+//   }
+
+//   .nav-order-input {
+//     margin-bottom: 20px;
+//   }
+
+//   .nav-order-btn {
+//     margin: 0;
+//   }
+
+//   .input-part > span {
+//     display: flex;
+//     align-items: center;
+//     padding-right: 15px;
+//     width: 24px;
+//   }
+
+//   .hr-line {
+//     display: none;
+//   }
+
+//   .btn-def {
+//     width: 100%;
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+// }
+/*________ End .nav-order ________*/
+
+
+.nav-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+  background: $gray-100;
+  font: 15px "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+
+  &-inputs {
+    display: flex;
+
+    &-date {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // flex-basis: 60%;
+      max-width: 455px;
+      margin: 0 30px 0 0;
+
+      & input {
+        color: $gray-700;
+        font-size: 15px;
+        height: 50px;
+        background-color: #ffffff;
+        padding: 0;
+        text-align: center;
+        border: solid 3px #f1f1f1;
+        outline: none;
+        margin-right: 2px;
+        font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+
+        &.year {
+          width: 64px;
+        }
+      }
+
+      &-separator {
+        display: block;
+        line-height: 50px;
+        margin: 0 12px;
+      }
+
+      &-prefix {
+        display: inline-block;
+        width: 25px;
+        line-height: 50px;
+      }
+    }
+
+    &-heading {
+      display: block;
+      flex-basis: 100%;
+      margin: 0 0 10px 0;
+    }
+
+    &-status {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 3px;
+        bottom: 3px;
+        width: 46px;
+        height: 46px;
+        background: url(../assets/img/icons/arrow-down.svg) no-repeat center;
+        background-size: 10px;
+        border-left: 3px solid $gray-50;
+        pointer-events: none;
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: solid 3px #f1f1f1;
+        border-radius: 0;
+        height: 50px;
+        width: 225px;
+        padding: 10px 20px;
+        font: 15px "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+        outline: none;
+        cursor: pointer;
+        background: $white;
+      }
+    }
+  }
+}
+
+.btn-def {
+  padding: 10px 27px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Merriweather", "Times New Roman", "Times", serif;
+  font-size: 14px;
+  color: $gray-700;
+  border: solid 3px $gray-700;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.ui-icon-circle-triangle-w,
+.ui-icon-circle-triangle-e {
+  background-position: center center;
+}
+
+.ui-datepicker-prev .ui-icon {
+  transform: rotate(180deg);
+  background-image: url("../../assets/img/icons/right.svg");
+}
+
+.ui-datepicker-next .ui-icon {
+  background-image: url("../../assets/img/icons/right.svg");
+}
+
+.btn-gray {
+  background: $gray-700;
+  color: $white;
+
+  &:hover {
+    background: #484747;
+    border-color: #484747;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@media screen and (max-width: 1579px) {
+  .nav-order {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-buttons {
+      flex-basis: 100%;
+      margin: 30px 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-order {
+    &-inputs {
+      &-date {
+        input {
+          width: 180px;
+        }
+      }
+
+      &-status {
+        select {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .nav-order {
+    &-inputs {
+      flex-wrap: wrap;
+
+      &-date {
+        width: 100%;
+        margin: 0;
+
+        &-start,
+        &-end {
+          display: flex;
+          width: 100%;
+
+          & > input {
+            width: calc(100% - 25px);
+          }
+        }
+
+        &-end {
+          margin: 10px 0 0 0;
+        }
+      }
+
+      &-status {
+        width: 100%;
+        margin: 40px 0 0 0;
+
+        & > select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btn-def {
+    width: 100%;
+  }
+}

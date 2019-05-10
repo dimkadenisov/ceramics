@@ -1,0 +1,53 @@
+.catalog-2 .grid-big .grid-item-text {
+  top: 0;
+  left: 0;
+  background: none;
+}
+
+// adaptive styles
+
+@media screen and (max-width: 575px) {
+  .catalog-2 .grid {
+    &-item {
+      height: auto;
+
+      &-content {
+        height: auto;
+      }
+
+      &-overlay {
+        display: block;
+      }
+
+      &-img {
+        height: 320px;
+      }
+
+      &-text {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 30px 30px;
+
+        &-heading {
+          padding: 0 0 20px 0;
+          color: $white;
+          text-transform: uppercase;
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+          font-size: 25px;
+        }
+
+        &-button {
+          padding: 0;
+          background: none;
+
+          &-icon {
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

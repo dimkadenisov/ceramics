@@ -1,0 +1,58 @@
+/*________ pageProfile ________*/
+.profile {
+  &-wrapper {
+    padding-top: 30px;
+    border-top: solid 1px #eeeeee;
+  }
+
+  &-img {
+    max-width: 360px;
+    max-height: 360px;
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+    & img {
+      height: auto;
+      max-width: 100%;
+      border: none;
+    }
+  }
+}
+
+.mt-none {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1579px) {
+  .profile-img {
+    max-width: 330px;
+    max-height: 330px;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-wrapper {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .profile-img {
+    max-width: 290px;
+    max-height: 290px;
+    height: 290px;
+    margin-bottom: 10px;
+  }
+
+  .nav-table-profile td {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/*________ End pageProfile ________*/
+//

@@ -1,0 +1,28 @@
+.panel-inform-wrapper
+  .panel-inform-block.panel-inform-block-status.gray
+    .panel-inform-block-shell
+      h3 Статус 
+        br
+        |партнера
+      .status
+        span золотой
+  .panel-inform-block.panel-inform-block-percent
+    .panel-inform-block-shell
+      h3 Скидка
+      .percent 10%
+  .panel-inform-block.gray
+    .panel-inform-block-shell
+      h3 Баланс
+      .balans 128 000 ₽
+  .panel-inform-block.panel-inform-block-numbers.gray
+    .panel-inform-block-shell
+      .numbers-row
+        .inc.button
+        .input-shell
+          input(type="number", name="", value="8", min="1", tabindex="0")
+          span %
+        .dec.button -
+      .promocode
+        h3 Промокод
+        .promocode-view#copy-el 31cvrthha
+        a.promocode-btn(href="#", onclick="CopyToClipboard('copy-el')") Скопировать

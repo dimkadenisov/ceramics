@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/swiper.min.css")
+    link(rel="stylesheet", href="styles/jquery-ui.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Выплаты
+  body
+    include ../components/header.pug
+    .container
+      .row
+        .col-sm-12.col-lg-10.col-xl-9
+          .site-breadcrumbs
+            .site-breadcrumbs-item
+              <a href="#">Главная</a> /
+            .site-breadcrumbs-item
+              <a href="/">Кабинет партнера</a> / 
+            .site-breadcrumbs-item
+              span Выплаты
+      main
+        .header-page
+          h1.page-h1 Выплаты
+          a.btn-add.d-xl-none(data-fancybox="popup-payout", data-src="#popup-payout", href="javascript:;") Вывести
+        
+        .partner-account
+          .row.justify-content-between
+            .col-3.d-none.d-xl-block
+              .side-menu
+                ul
+                  li 
+                    a(href="pageCabinet.html") Кабинет
+                  li
+                    a(href="pageProfile.html") Профиль
+                  li
+                    a(href="#") Мои заказы
+                  li 
+                    a(href="#") Заказы клиентов
+                  li
+                    a(href="#") Агенты
+                  li
+                    a(href="#") Выплаты
+
+              a.btn-add(data-fancybox="", data-src="#popup-payout", href="javascript:;") Вывести
+            
+            .col-12.col-xl-9
+              include ../components/panel-inform.pug
+              include ../components/nav-order.pug
+              .nav-table.nav-table-payouts
+                table
+                  thead
+                    tr
+                      th 
+                        label.catalog-filter-container
+                          input.catalog-filter-checkbox(type="checkbox")
+                          span.catalog-filter-checkmark
+                      th Дата
+                      th Операция
+                      th Сумма
+                      th Статус
+                  tbody
+                    tr
+                      td 
+                        label.catalog-filter-container
+                          input.catalog-filter-checkbox(type="checkbox")
+                          span.catalog-filter-checkmark
+                      td 23.01.2018
+                      td Начисление за заказ № 465436
+                      td 513 000 ₽
+                      td.green Доступно к выплате
+                    tr
+                      td 
+                        label.catalog-filter-container
+                          input.catalog-filter-checkbox(type="checkbox")
+                          span.catalog-filter-checkmark
+                      td 23.01.2018
+                      td Начисление за агента Сидорова Игоря Владимировича
+                      td 220 000 ₽
+                      td.green Доступно к выплате
+                    tr
+                      td 
+                        label.catalog-filter-container
+                          input.catalog-filter-checkbox(type="checkbox")
+                          span.catalog-filter-checkmark
+                      td 23.01.2018
+                      td Вывод средств
+                      td 513 000 ₽
+                      td.green Доступно к выплате
+                    tr
+                      td 
+                        label.catalog-filter-container
+                          input.catalog-filter-checkbox(type="checkbox")
+                          span.catalog-filter-checkmark
+                      td 23.01.2018
+                      td Начисление за заказ № 465436
+                      td 513 000 ₽
+                      td.green Доступно к выплате
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за заказ № 465433
+                      td 3 000 ₽
+                      td.red Запрошено к выплате
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за агента Сидорова Игоря Владимировича
+                      td 220 000 ₽
+                      td.red Запрошено к выплате
+                    tr
+                      td
+                      td 23.01.2018
+                      td Вывод средств
+                      td 513 000 ₽
+                      td Выплачено
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за заказ № 245335
+                      td 513 000 ₽
+                      td Выплачено
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за заказ № 465436
+                      td 513 000 ₽
+                      td Выплачено
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за агента Сидорова Игоря Владимировича
+                      td 220 000 ₽
+                      td Выплачено
+                    tr
+                      td
+                      td 23.01.2018
+                      td Вывод средств
+                      td 513 000 ₽
+                      td Выплачено
+                    tr
+                      td
+                      td 23.01.2018
+                      td Начисление за заказ № 245335
+                      td 513 000 ₽
+                      td Выплачено
+    include ../components/popup-payout.pug
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/script.js")
+    script(type="text/javascript" src="scripts/jquery-ui.js")
+    script(type="text/javascript" src="scripts/datepicker.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+
+

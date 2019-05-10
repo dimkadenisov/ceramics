@@ -1,0 +1,202 @@
+.text-page {
+  font-family: "Museo Sans Cyrl", "Helvetica", "Arial", sans-serif;
+
+  & h1 {
+    margin: 0 0 35px 0;
+    color: $gray-700;
+    font-size: 34px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+  }
+
+  & h2 {
+    margin: 35px 0 25px 0;
+    color: $gray-700;
+    font-size: 25px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    margin: 30px 0 25px 0;
+    color: $gray-700;
+    font-size: 17px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+  }
+
+  & a {
+    color: $orange;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  & ol {
+    padding: 0;
+    margin: 0 0 40px 0;
+    list-style: none;
+
+    & li {
+      position: relative;
+      padding: 0 0 0 26px;
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      line-height: 22px;
+      counter-increment: step-counter;
+
+      &::before {
+        content: counter(step-counter) ".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 42px;
+        display: block;
+        font-weight: 900;
+        font-size: 14px;
+        color: $orange;
+      }
+    }
+  }
+
+  & ul {
+    padding: 0;
+    margin: 0 0 40px 0;
+    list-style: none;
+
+    & li {
+      position: relative;
+      padding: 0 0 0 26px;
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      line-height: 22px;
+      counter-increment: step-counter;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: 9px 0 0 0;
+        background: $orange;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & > blockquote {
+    max-width: 1000px;
+    padding: 45px 30px 45px 25px;
+    margin: 0 0 20px 0;
+    background: 55px 30px / 80px 80px url("../../assets/img/icons/left-quote.svg") no-repeat $light-orange;
+    border-left: 3px solid $orange;
+
+    & p {
+      margin: 0 0 10px 0;
+      color: $gray-200;
+    }
+
+    & cite {
+      font-style: normal;
+      font-family: "Museo Sans Cyrl 600", "Helvetica", "Arial", sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  & img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+.responsive-table {
+  max-width: 100%;
+  margin: 0 0 20px 0;
+  overflow-x: auto;
+}
+
+.responsive-table table,
+.text-page table {
+  width: 100%;
+}
+
+.responsive-table table tr:nth-child(odd),
+.text-page table tr:nth-child(odd) {
+  background: $gray-100;
+}
+
+.responsive-table table tr th,
+.responsive-table table tr td,
+.text-page table tr th,
+.text-page table tr td {
+  padding: 16px 12px;
+  font-size: 15px;
+  font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: middle;
+  color: $gray-700;
+}
+
+.responsive-table table tr th,
+.text-page table tr th {
+  font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+}
+
+.responsive-table table a,
+.text-page table a {
+  color: $orange;
+}
+
+@media screen and (min-width: 768px) {
+  img.left-image {
+    display: block;
+    float: left;
+    max-width: calc(50% - 30px);
+    margin: 0 30px 25px 0;
+  }
+
+  img.right-image {
+    display: block;
+    float: right;
+    max-width: calc(50% - 30px);
+    margin: 0 0 25px 30px;
+  }
+
+  .text-page table tr th,
+  .text-page table tr td,
+  .responsive-table table tr th,
+  .responsive-table table tr td {
+    padding: 24px 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-page h1,
+  .text-page h2 {
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-200;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .text-page h1 {
+    font-size: 25px;
+  }
+
+  .text-page h2 {
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 17px;
+    color: $gray-700;
+    text-transform: capitalize;
+  }
+}

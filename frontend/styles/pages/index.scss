@@ -1,0 +1,1290 @@
+.block-name {
+  display: inline-block;
+  margin: 0 0 15px 0;
+  color: $gray-700;
+  font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+  font-size: 34px;
+  line-height: 42px;
+  text-transform: uppercase;
+
+  &-white {
+    color: $white;
+  }
+}
+
+.overview {
+  width: 100%;
+  padding: 0;
+  margin: 30px 0 65px 0;
+
+  &-sizer {
+    width: 25%;
+  }
+
+  &-item {
+    width: 25%;
+    height: 390px;
+    padding: 15px;
+    margin: 0;
+
+    &-swiper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
+
+      &-slide {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
+
+        &-content {
+          width: 33%;
+          min-height: 50%;
+          padding: 30px;
+          margin: 30px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: $white;
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+
+          & > span {
+            font-size: 25px;
+            line-height: 32px;
+            text-transform: uppercase;
+          }
+
+          &-heading {
+            display: block;
+            margin: 0 0 15px 0;
+            font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+            font-size: 25px;
+            line-height: 32px;
+            text-transform: uppercase;
+          }
+
+          & > p {
+            color: $white;
+            font-size: 15px;
+            line-height: 24px;
+          }
+
+          & > a {
+            padding: 7px 30px;
+            border: 2px solid $white;
+            color: $white;
+            font-family: "Merriweather", "Times New Roman", "Times", serif;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            transition: all 0.1s;
+
+            &:hover,
+            &:focus {
+              background: $orange;
+              color: $white;
+              text-decoration: none;
+              box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+            }
+
+            &::after {
+              content: url("../../assets/img/icons/left-r.svg");
+              display: inline-block;
+              width: 10px;
+              margin: 0 0 5px 10px;
+            }
+          }
+        }
+      }
+
+      &-button {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        bottom: 45px;
+        border: 3px solid rgba($white, 0.35);
+        background-image: url(../../assets/img/icons/left.svg);
+        background-position: center center;
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          background-color: rgba($gray-100, 0.35);
+        }
+
+        &-prev {
+          left: 45px;
+        }
+
+        &-next {
+          left: 107px;
+          transform: rotate(180deg);
+        }
+
+        &-disabled {
+          filter: opacity(0.3);
+          cursor: default;
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+        }
+      }
+
+      &-pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 45px;
+        left: 169px;
+        max-width: 200px;
+        width: 100%;
+        z-index: 1;
+
+        &-bullet {
+          min-width: 1px;
+          width: 100%;
+          flex-basis: fill;
+          height: 3px;
+          background: $white;
+          box-sizing: unset;
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover,
+          &:focus {
+            outline: none;
+            background: $orange;
+          }
+
+          &:not(:last-child) {
+            margin: 0 15px 0 0;
+          }
+
+          &-active {
+            width: 200%;
+            background: $orange;
+          }
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
+
+      &-text {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      &-img {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(0.9);
+      }
+
+      &-icon {
+        display: block;
+        width: 58px;
+        height: 58px;
+        margin: 0 0 15px 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      &-heading {
+        max-width: 50%;
+        margin: 0 0 15px 0;
+        color: $white;
+        font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+        font-size: 25px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      &-button {
+        max-width: 77%;
+        padding: 7px 30px;
+        border: 2px solid $white;
+        background: rgba(0, 0, 0, 0.5);
+        color: $white;
+        font-family: "Merriweather", "Times New Roman", "Times", serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        transition: all 0.1s;
+
+        &:hover,
+        &:focus {
+          background: $orange;
+          color: $white;
+          text-decoration: none;
+          box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+        }
+
+        & > i {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: 0 0 0 10px;
+          background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+        }
+      }
+    }
+  }
+
+  &-big {
+    width: 75%;
+    height: 780px;
+  }
+}
+
+.ready-cases {
+  padding: 60px 0 25px 0;
+  background-color: $gray-100;
+
+  & .grid {
+    &-item {
+      &-text {
+        top: 0;
+        left: 0;
+        background: none;
+      }
+    }
+  }
+}
+
+.text-item {
+  &-text {
+    height: 100%;
+    padding: 30px;
+    border: 6px solid $gray-200;
+    color: $gray-200;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    text-transform: uppercase;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      border: 6px solid $orange;
+    }
+
+    &-wrapper {
+      height: 100%;
+    }
+
+    &-orange {
+      display: block;
+      color: $orange;
+      font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+    }
+
+    & a {
+      display: inline-block;
+      padding: 10px 30px;
+      margin: 15px 0 0 0;
+      border: 2px solid transparent;
+      background: rgba($gray-700, 0.8);
+      color: $white;
+      font-family: "Merriweather", "Times New Roman", "Times", serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      transition: all 0.1s;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        border: 2px solid $gray-700;
+        background: $orange;
+      }
+
+      & > i {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 0 0 10px;
+        background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+      }
+    }
+  }
+}
+
+.showroom {
+  padding: 60px 0 80px 0;
+
+  &-item {
+    position: relative;
+    height: 562px;
+    margin: 15px 0 0 0;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-text {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 360px;
+      height: 360px;
+      padding: 30px;
+      background: rgba($orange, 0.5);
+      color: $white;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 25px;
+      line-height: 32px;
+      text-transform: uppercase;
+
+      &-bold {
+        display: block;
+        font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+      }
+
+      p {
+        margin: 20px 0;
+        color: $white;
+        line-height: 24px;
+        text-transform: none;
+      }
+
+      & a {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 2px solid $white;
+        color: $white;
+        font-family: "Merriweather", "Times New Roman", "Times", serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        transition: all 0.1s;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          background: $orange;
+        }
+
+        & > i {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: 0 0 0 10px;
+          background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.popular-collections {
+  padding: 60px 0 25px 0;
+  background-color: $gray-100;
+}
+
+.grid-item-new {
+  & .grid-item-content {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 6px solid $green;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "Новинка";
+      position: absolute;
+      bottom: 35px;
+      right: 35px;
+      padding: 36px 12px;
+      color: $white;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      background: $green;
+      border-radius: 50%;
+    }
+  }
+}
+
+.articles {
+  padding: 60px 0 25px 0;
+  background: $gray-600;
+
+  &-button {
+    display: inline-block;
+    margin: 0 0 0 30px;
+    color: $white;
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    & > i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 0 0 10px;
+      background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+    }
+  }
+
+  &-content {
+    position: relative;
+    height: auto;
+    padding: 0 0 50px 0;
+    overflow: hidden;
+
+    & > .swiper-wrapper {
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      display: block;
+      width: 25%;
+      padding: 15px;
+
+      &:hover {
+        & .articles-content-item-img {
+          box-shadow: 8.485px 8.485px 40px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        & span {
+          color: $orange;
+        }
+      }
+
+      &-img {
+        padding-top: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.2s;
+      }
+
+      & span {
+        display: inline-block;
+        padding: 20px 0 0 0;
+        color: $white;
+        font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: 26px;
+        transition: all 0.2s;
+      }
+    }
+
+    &-pagination {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 20px 15px 30px 15px;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.img {
+  position: relative;
+  padding: 60px 0 80px 0;
+  box-shadow: inset 9999999px 0 0 rgba($color: $white, $alpha: 0.88);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.why-future-ceramics {
+  position: relative;
+
+  &-background {
+    display: block;
+    position: absolute;
+    top: -60px;
+    bottom: -40px;
+    left: -15px;
+    right: -15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  & > hr {
+    margin: 15px 0 25px 0;
+    border-color: $gray-359;
+  }
+
+  & > a {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 15px 0 0 0;
+    border: 2px solid transparent;
+    background: rgba($gray-700, 0.8);
+    color: $white;
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border: 2px solid $gray-700;
+      background: $orange;
+    }
+
+    & > i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 0 0 10px;
+      background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+    }
+  }
+}
+
+.news {
+  &-button {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    color: $gray-700;
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      color: $gray-700;
+    }
+
+    & > i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 0 0 10px;
+      background: center url("../../assets/img/icons/up.svg") no-repeat;
+      transform: rotate(90deg);
+    }
+  }
+
+  &-block {
+    &-item {
+      margin: 0 0 30px 0;
+
+      & > hr {
+        margin: 15px 0 25px 0;
+        border-color: $gray-359;
+      }
+
+      &-date {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 25px 0;
+        color: $gray-200;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      &-name {
+        color: $gray-700;
+        font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: 26px;
+        transition: all 0.1s;
+
+        &-big {
+          display: inline-block;
+          margin: 30px 0;
+          font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+          font-size: 25px;
+          line-height: 32px;
+        }
+
+        &:hover {
+          color: $orange;
+          text-decoration: none;
+        }
+      }
+
+      &-img {
+        padding-top: 100%;
+        margin: 70px 0 0 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.map {
+  position: relative;
+
+  &-container {
+    position: relative;
+    height: 820px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-scroll {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      background: rgba($gray-700, 0.1);
+    }
+  }
+
+  &-buy {
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    width: 525px;
+    background-color: $white;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+
+    &-name {
+      padding: 0 30px;
+      margin: 45px 0 15px 0;
+
+      span {
+        display: block;
+        max-width: 720px;
+        padding: 0 15px;
+        margin: 0 auto;
+      }
+    }
+
+    &-places {
+      position: relative;
+      height: 650px;
+      overflow: hidden;
+
+      &-item {
+        display: block;
+        max-width: 720px;
+        padding: 15px;
+        margin: 0 auto;
+        color: $gray-700;
+
+        &:hover,
+        &:focus {
+          color: $gray-700;
+          text-decoration: none;
+        }
+
+        &-wrapper {
+          flex: 1 0 auto;
+          width: 100%;
+          padding: 0 30px;
+
+          &:hover,
+          &:focus {
+            background-color: $gray-100;
+          }
+        }
+
+        &-name {
+          display: block;
+          color: $gray-700;
+          font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+          font-size: 15px;
+          line-height: 24px;
+        }
+
+        &-adress {
+          display: inline-block;
+          max-width: 325px;
+          color: $gray-700;
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.swiper-container-vertical {
+  & > .swiper-scrollbar {
+    width: 4px;
+    height: 100%;
+    background: $gray-359;
+    border-radius: 0;
+
+    & > .swiper-scrollbar-drag {
+      background: $orange;
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1579px) {
+  .overview {
+    &-sizer {
+      width: 33.33%;
+    }
+
+    &-item {
+      width: 33.33%;
+      height: 276px;
+
+      &-swiper {
+        &-slide {
+          &-content {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    &-big {
+      width: 66.66%;
+      height: 552px;
+    }
+  }
+
+  .ready-cases {
+    & .grid {
+      &-sizer,
+      &-item {
+        width: 33.33%;
+      }
+
+      &-big {
+        width: 33.33%;
+
+        & .grid-item-text {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .articles {
+    &-content {
+      &-item {
+        width: 33.33%;
+      }
+    }
+  }
+
+  .news {
+    &-button {
+      margin: 0 0 60px 15px;
+    }
+  }
+
+  .map {
+    &-buy {
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .overview {
+    &-sizer {
+      width: 50%;
+    }
+
+    &-item {
+      width: 50%;
+      height: 480px;
+
+      &-swiper {
+        &-slide {
+          &-content {
+            width: 42%;
+          }
+        }
+      }
+
+      &-content {
+        &-button {
+          max-width: 60%;
+        }
+      }
+    }
+
+    &-big {
+      width: 100%;
+    }
+  }
+
+  .text-item {
+    &-text,
+    &-text-orange {
+      font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+      font-size: 17px;
+      line-height: 26px;
+      text-transform: none;
+    }
+  }
+
+  .map {
+    &-container {
+      height: 765px;
+    }
+
+    &-buy {
+      width: 337px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .overview {
+    margin: 15px 0 55px 0;
+
+    &-item {
+      height: 360px;
+
+      &-swiper {
+        &-slide {
+          &-content {
+            width: 50%;
+
+            & > span,
+            &-heading {
+              font-size: 17px;
+              line-height: 26px;
+              text-transform: none;
+              font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+            }
+          }
+        }
+      }
+
+      &-content {
+        &-button {
+          max-width: 85%;
+        }
+      }
+    }
+
+    &-big {
+      height: 720px;
+    }
+  }
+
+  .ready-cases {
+    & .grid {
+      &-sizer,
+      &-item {
+        width: 50%;
+      }
+
+      &-big {
+        width: 100%;
+        height: 720px;
+      }
+    }
+  }
+
+  .showroom {
+    &-item {
+      &-text {
+        width: 300px;
+        height: 300px;
+        font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+        font-size: 17px;
+        line-height: 26px;
+        text-transform: none;
+
+        & p {
+          max-height: 96px;
+          margin: 10px 0;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .articles {
+    &-content {
+      &-item {
+        width: 50%;
+      }
+    }
+  }
+
+  .why-future-ceramics {
+    margin: 0 0 70px 0;
+  }
+
+  .news {
+    &-button {
+      margin: 0 0 30px 15px;
+    }
+  }
+
+  .map {
+    &-buy {
+      position: relative;
+      width: 100%;
+      box-shadow: none;
+
+      &-places {
+        height: auto;
+
+        .swiper-wrapper {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-name {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .overview {
+    margin: 0 0 65px 0;
+
+    &-item {
+      height: 270px;
+
+      &-swiper {
+        &-pagination {
+          left: 30px;
+          bottom: 30px;
+        }
+
+        &-slide {
+          &-content {
+            width: 100%;
+            padding: 30px 15px 0 15px;
+            margin: 0;
+            background: transparent;
+
+            & > a {
+              padding: 7px 80px;
+              background: rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+
+      &-content {
+        &-text {
+          bottom: 15px;
+          left: 15px;
+          right: 15px;
+        }
+
+        &-button {
+          max-width: 100%;
+          padding: 7px 25px;
+        }
+      }
+    }
+
+    &-big {
+      height: 302px;
+    }
+  }
+
+  .ready-cases {
+    & .grid {
+      &-big {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+
+  .text-item {
+    &-text {
+      padding: 15px;
+    }
+  }
+
+  .showroom {
+    &-item {
+      height: 320px;
+
+      &-text {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        background: none;
+      }
+    }
+  }
+
+  .articles {
+    &-content {
+      & > .swiper-wrapper {
+        flex-wrap: nowrap;
+      }
+
+      &-item {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .img {
+    padding: 60px 0 30px 0;
+  }
+
+  .map {
+    &-container {
+      height: 480px;
+    }
+
+    &-buy {
+      position: relative;
+      width: 100%;
+
+      &-name {
+        padding: 0 15px;
+
+        span {
+          max-width: 540px;
+        }
+      }
+
+      &-places {
+        &-item {
+          max-width: 540px;
+
+          &-wrapper {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .overview {
+    margin: 0 0 45px 0;
+
+    &-sizer,
+    &-big {
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      height: auto;
+
+      &-swiper {
+        height: calc(100vh - 48px);
+
+        &-parent {
+          padding: 0 0 15px 0;
+        }
+
+        &-button {
+          bottom: 30px;
+
+          &-prev {
+            left: 15px;
+          }
+
+          &-next {
+            left: 77px;
+          }
+        }
+
+        &-pagination {
+          left: 15px;
+          right: 15px;
+          max-width: unset;
+          width: unset;
+        }
+      }
+
+      &-content {
+        &-img {
+          padding-top: 100%;
+        }
+      }
+    }
+  }
+
+  .ready-cases .grid,
+  .popular-collections .grid {
+    &-sizer,
+    &-big {
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      height: auto;
+
+      &-content {
+        height: auto;
+      }
+
+      &-overlay {
+        display: block;
+      }
+
+      &-img {
+        height: 320px;
+      }
+
+      &-text {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 30px 30px;
+
+        &-heading {
+          padding: 0 0 20px 0;
+          color: $white;
+          text-transform: uppercase;
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+          font-size: 25px;
+        }
+
+        &-button {
+          padding: 0;
+          background: none;
+
+          &-icon {
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .text-item {
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      &-wrapper {
+        position: relative;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  .showroom {
+    &-item {
+      height: auto;
+
+      & .grid-item-overlay {
+        display: block;
+      }
+
+      &-img {
+        padding-top: 100%;
+      }
+    }
+  }
+
+  .articles {
+    &-content {
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+
+  .img {
+    background-size: 0 0;
+    box-shadow: none;
+  }
+
+  .why-future-ceramics {
+    &-background {
+      opacity: 0.12;
+    }
+  }
+
+  .news {
+    &-button {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .map {
+    &-buy {
+      &-name {
+        margin: 45px 0 15px 15px;
+      }
+
+      &-places {
+        &-item {
+          padding: 15px;
+          margin: 0;
+
+          &-wrapper {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

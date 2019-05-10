@@ -1,0 +1,42 @@
+.map-tooltip {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  max-width: 360px;
+  padding: 30px;
+  margin: 15px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+  background: $white;
+
+  &-content {
+    &-img {
+      height: 113px;
+      margin: 0 0 20px 0;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-place {
+      display: block;
+      margin: 0 0 10px 0;
+      color: $gray-700;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    &-description {
+      display: block;
+      margin: 0 0 15px 0;
+      color: $gray-700;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+
+      a {
+        color: $gray-700;
+      }
+    }
+  }
+}

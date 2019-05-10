@@ -1,0 +1,125 @@
+header.site-header
+  nav.d-none.d-lg-block.top-nav
+    .container
+      .row.justify-content-between
+        .col-auto
+          ul.top-nav-list
+            li
+              a(href="#")|О компании
+            li
+              a(href="#")|Покупателю
+            li
+              a(href="#")|Полезная информация
+            li
+              a(href="#")|Контакты
+        .col-auto
+          ul.top-nav-list
+            li
+              a(data-fancybox, data-src="#popup-ask-question", href="javascript:;")|Задать вопрос
+            li
+              a(href="#")|Личный кабинет
+
+  .middle-line
+    .container
+      .row.justify-content-between
+        .col-auto
+          i.d-inline-block.d-lg-none.middle-line-burger-menu
+          .logo
+            a(href="#").logo-link
+              img(src="assets/img/logo.svg", alt="logo").logo-img
+          .d-none.d-lg-inline-block.description
+            span.description-text Интернет-магазин<br>профессионального керамогранита
+          .nav-list-scrolled-wrapper
+            ul.d-none.row.nav-list-scrolled
+              li
+                a(href="#") Каталог
+              li
+                a(href="#") Готовые решения
+              li
+                a(href="#") Шоурум
+              li
+                a(href="#") Где купить
+              li
+                a(href="#") Партнерам
+        .col-auto
+          form.d-none.d-sm-inline-block.search-form.align-middle
+            i.d-none.d-sm-inline-block.d-xl-none.search-form-icon
+            input.d-none.d-xl-block.search-form-input(type="text", value="", placeholder="Поиск по наименованию товара...")
+            input.d-none.d-xl-block.search-form-button(type="submit" value="")
+          .hot-line.align-middle
+            a.hot-line-tel(href="tel:88000000000")
+              |8 
+              span 800 
+              |000 00 00
+            p.d-lg-block.d-none.hot-line-text Звонок по России бесплатный
+            .shopping-basket
+              a(href="#")
+                span.shopping-basket-count 17
+  nav.d-none.d-lg-block.bottom-nav
+    .container
+      ul.row.justify-content-xl-start.justify-content-xxl-center.bottom-nav-list
+        li.bottom-nav-list-item
+          a.bottom-nav-list-item-link(href="#") Каталог
+        li.bottom-nav-list-item
+          a.bottom-nav-list-item-link(href="#") Готовые решения
+        li.bottom-nav-list-item
+          a.bottom-nav-list-item-link(href="#") Шоурум
+        li.bottom-nav-list-item
+          a.bottom-nav-list-item-link(href="#") Где купить
+        li.bottom-nav-list-item
+          a.bottom-nav-list-item-link(href="#") Партнерам
+
+.dropdown.d-lg-none
+  .dropdown-wrapper
+    .container
+      form.search-form.search-form-dropdown
+        input.d-block.search-form-input(type="text", value="", placeholder="Поиск по наименованию товара...")
+        input.d-block.search-form-button(type="submit" value="")
+      ul.col-auto.dropdown-list
+        li
+          a.dropdown-list-link.isparent(href="#") Каталог
+          .dropdown-submenu
+            a.previous(href="#") Каталог 
+              span.back Назад
+            ul.col-auto.dropdown-list
+              li
+                a.dropdown-list-link.px-0(href="#") Hello
+              li
+                a.dropdown-list-link.px-0(href="#") Декоративный керамогранит
+              li
+                a.dropdown-list-link.px-0(href="#") Ступени, плинтус, мозайка
+              li
+                a.dropdown-list-link.px-0(href="#") Декоративные элементы
+        li
+          a.dropdown-list-link.isparent(href="#") Готовые решения
+          .dropdown-submenu
+            a.previous(href="#") Каталог
+              span.back Назад
+            ul.col-auto.dropdown-list
+              li
+                a.dropdown-list-link.px-0(href="#") Технический керамогранит
+              li
+                a.dropdown-list-link.px-0(href="#") Декоративный керамогранит
+              li
+                a.dropdown-list-link.px-0(href="#") Ступени, плинтус, мозайка
+              li
+                a.dropdown-list-link.px-0(href="#") Декоративные элементы
+        li
+          a.dropdown-list-link(href="#") Шоурум
+        li
+          a.dropdown-list-link(href="#") Где купить
+        li
+          a.dropdown-list-link(href="#") Партнерам
+        li
+          a.dropdown-list-link(href="#") О компании
+        li
+          a.dropdown-list-link(href="#") Полезная информация
+        li
+          a.dropdown-list-link(href="#") Контакты
+    //--
+    .hot-line-tel-dropdown-wrapper
+      .container
+        a.hot-line-tel(href="tel:88000000000")
+          |8 
+          span 800 
+          |000 00 00

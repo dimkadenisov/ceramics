@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Акции
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                <a href="#">Шоурум</a> /
+              .site-breadcrumbs-item
+                span.
+                  Название акции
+        h1.page-h1 Название акции
+        .text-page.stock.clearfix
+          img.left-image(src="assets/img/sample-image-1.jpg", alt="sampe image")
+          span.stock-time
+            span 3 августа
+            |
+            |-
+            |
+            span 12 сентября
+          p.
+            Вскоре ему повстречался коварный составитель рекламных текстов,
+            напоивший его языком и речью и заманивший в свое агенство,
+            которое использовало его снова и снова в своих проектах.
+            И если его не переписали, то живет он там до сих пор. Далеко-далеко
+            за словесными горами в стране гласных и согласных живут рыбные тексты.
+            Вдали от всех живут они в буквенных домах на берегу Семантика большого
+            языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает
+            ее всеми необходимыми правилами.
+          p.
+            Эта парадигматическая страна, в которой жаренные члены предложения залетают
+            прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами,
+            ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного
+            текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+            Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных
+            точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных
+            букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину
+            курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград.
+          p.
+            Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти
+            в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых,
+            диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+            Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+            Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад,
+            на силуэт своего родного города Буквоград, на заголовок деревни Алфавит
+            и на подзаголовок своего переулка Строчка.
+          p.
+            Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти
+            в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых,
+            диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя
+            с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. 
+        .row.layout
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый Очень Хороший
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    span 1200x1200
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 1 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 109 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 100 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-surfaces
+                  ul.layout-item-surfaces-list
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 3 790
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 10 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 9 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability.layout-item-availability-not-available Нет в наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/query.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

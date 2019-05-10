@@ -1,0 +1,44 @@
+//- .nav-order
+//-   .nav-order-shell
+//-     .nav-order-item.nav-order-input
+//-       .nav-order-title За период:
+//-       .input-part
+//-         span от	
+//-         input(type="text", class="date", value="", placeholder="_.__.___", readonly)
+//-       span.hr-line - 
+//-       .input-part
+//-         span до
+//-         input(type="text", class="date", value="", placeholder="_.__.___", readonly)
+//-     .nav-order-item.nav-order-select
+//-       .nav-order-title Статус заказа:
+//-       .select-shell
+//-         select
+//-           option(value="0") Выполнен
+//-           option(value="1") Выполнен
+//-           option(value="2") Выполнен
+//-           option(value="3") Выполнен
+//-   .nav-order-item.nav-order-btn
+//-     .btn-def.btn-gray применить	
+//-     .btn-def сбросить
+
+.nav-order
+  .nav-order-inputs
+    .nav-order-inputs-date
+      span.nav-order-inputs-heading За период:
+      .nav-order-inputs-date-start
+        span.nav-order-inputs-date-prefix.d-inline-block.d-md-none от	
+        input(type="text", class="date", value="", placeholder="_.__.___", readonly)
+      span.d-none.d-md-block.nav-order-inputs-date-separator - 
+      .nav-order-inputs-date-end
+        span.nav-order-inputs-date-prefix.d-inline-block.d-md-none до 
+        input(type="text", class="date", value="", placeholder="_.__.___", readonly)
+    .nav-order-inputs-status
+      span.nav-order-inputs-heading Статус заказа:
+      select
+        option(value="0") Выполнен
+        option(value="1") Выполнен
+        option(value="2") Выполнен
+        option(value="3") Выполнен
+  .nav-order-buttons
+    .btn-def.btn-gray Применить	
+    .btn-def Сбросить

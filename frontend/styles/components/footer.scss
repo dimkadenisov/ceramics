@@ -1,0 +1,203 @@
+.subscribtion {
+  padding: 20px 0;
+  background: $gray-300
+    linear-gradient(to right, rgb(97, 97, 97) 0%, rgb(151, 167, 166) 100%);
+
+  &-heading {
+    &-icon {
+      display: inline-block;
+      height: 31px;
+      width: 31px;
+      margin: 0 15px 0 0;
+      background: center url("../../assets/img/icons/mail.svg") no-repeat;
+      background-size: 31px 31px;
+    }
+
+    &-text {
+      color: $white;
+      font-size: 17px;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-basis: 662px;
+
+    &-input {
+      height: 48px;
+      padding: 0 0 0 30px;
+      margin: 0 14px 0 60px;
+      min-width: 195px;
+      flex-basis: 430px;
+      border: 3px solid $gray-100;
+      border-radius: 0;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      color: $gray-200;
+    }
+
+    &-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: "Merriweather", "Times New Roman", "Times", serif;
+      text-transform: uppercase;
+      border: 3px solid $gray-100;
+      border-radius: 0;
+      color: $gray-100;
+      background: transparent;
+
+      &:hover {
+        border-color: $white;
+        background-color: $orange;
+        box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+      }
+    }
+  }
+}
+
+.footer {
+  background: $gray-700;
+
+  &-content {
+    padding: 60px 0 0 0;
+
+    &-column {
+      &-heading {
+        padding-bottom: 18px;
+        font-size: 14px;
+        font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+        text-transform: uppercase;
+        color: $gray-100;
+      }
+
+      &-separator {
+        height: 3px;
+        width: 200px;
+        margin: 12px 0 0 0;
+        background: $gray-600;
+      }
+
+      &-list {
+        padding: 20px 0 0;
+        margin: 0;
+        list-style: none;
+
+        &-item {
+          padding: 0 0 8px 0;
+
+          &-link {
+            font-size: 14px;
+            font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: $gray-200;
+
+            &:hover {
+              color: $white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      &-links {
+        padding: 23px 0 50px;
+
+        &-icon {
+          display: inline-block;
+          margin: 0 8px 0 0;
+          border: 3px solid $gray-600;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          &:hover {
+            border-color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    padding: 17px 0;
+
+    &-info,
+    &-developers {
+      display: block;
+      font-size: 14px;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      color: $gray-200;
+      text-decoration: none;
+    }
+
+    &-developers-link {
+      color: $gray-200;
+
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.socials {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-size: 15px 15px;
+}
+
+.payment {
+  height: 32px;
+  width: 42px;
+  background-size: 30px 30px;
+}
+
+.separator {
+  height: 3px;
+  background: $gray-600;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgb(254, 140, 0) 0%, rgb(251, 97, 0) 47%, rgb(248, 54, 0) 100%);
+}
+
+//adaptive footer styles
+
+@media screen and (max-width: 991px) {
+  .subscribtion {
+    &-heading {
+      padding: 25px 0 32px 0;
+    }
+
+    &-form {
+      padding: 0 0 25px 0;
+
+      &-input {
+        flex-basis: 100%;
+        margin: 0 14px 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subscribtion {
+    padding: 50px 0;
+
+    &-form {
+      flex-wrap: wrap;
+
+      &-input {
+        margin: 0;
+      }
+
+      &-button {
+        flex-basis: 100%;
+        margin: 13px 0 0 0;
+      }
+    }
+  }
+}

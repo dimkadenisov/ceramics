@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/swiper.min.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Карточка</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="d-none d-lg-block top-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a data-fancybox="data-fancybox" data-src="#popup-ask-question" href="javascript:;">Задать вопрос</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-line">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto"><i class="d-inline-block d-lg-none middle-line-burger-menu"></i>
+                        <div class="logo"><a class="logo-link" href="#"><img class="logo-img" src="assets/img/logo.svg" alt="logo" /></a></div>
+                        <div class="d-none d-lg-inline-block description"><span class="description-text">Интернет-магазин<br>профессионального керамогранита</span></div>
+                        <div class="nav-list-scrolled-wrapper">
+                            <ul class="d-none row nav-list-scrolled">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Готовые решения</a></li>
+                                <li><a href="#">Шоурум</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form class="d-none d-sm-inline-block search-form align-middle"><i class="d-none d-sm-inline-block d-xl-none search-form-icon"></i><input class="d-none d-xl-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-none d-xl-block search-form-button" type="submit" value="" /></form>
+                        <div class="hot-line align-middle"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a>
+                            <p class="d-lg-block d-none hot-line-text">Звонок по России бесплатный</p>
+                            <div class="shopping-basket"><a href="#"><span class="shopping-basket-count">17</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="d-none d-lg-block bottom-nav">
+            <div class="container">
+                <ul class="row justify-content-xl-start justify-content-xxl-center bottom-nav-list">
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Каталог</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Готовые решения</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Шоурум</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Где купить</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Партнерам</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown d-lg-none">
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <form class="search-form search-form-dropdown"><input class="d-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-block search-form-button" type="submit" value="" /></form>
+                <ul class="col-auto dropdown-list">
+                    <li><a class="dropdown-list-link isparent" href="#">Каталог</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог <span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Hello</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link isparent" href="#">Готовые решения</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог<span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Технический керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link" href="#">Шоурум</a></li>
+                    <li><a class="dropdown-list-link" href="#">Где купить</a></li>
+                    <li><a class="dropdown-list-link" href="#">Партнерам</a></li>
+                    <li><a class="dropdown-list-link" href="#">О компании</a></li>
+                    <li><a class="dropdown-list-link" href="#">Полезная информация</a></li>
+                    <li><a class="dropdown-list-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hot-line-tel-dropdown-wrapper">
+                <div class="container"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-xl-9">
+                    <div class="site-breadcrumbs">
+                        <div class="site-breadcrumbs-item"><a href="#">Главная</a> /</div>
+                        <div class="site-breadcrumbs-item"><a href="#">Каталог</a> /</div>
+                        <div class="site-breadcrumbs-item"><a href="#">Декоративный керамогранит</a> /</div>
+                        <div class="site-breadcrumbs-item"><span>Колла</span></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="page-h1">КорКерамогранит Колла Классикзина</h1>
+            <div class="card-grid">
+                <div class="card-grid-swiper">
+                    <div class="swiper-card swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-card-slide"><a class="swiper-card-slide-img" style="background-image:url(assets/img/sample-image-1.jpg)" href="assets/img/sample-image-1.jpg" data-fancybox="gallery"></a></div>
+                            <div class="swiper-slide swiper-card-slide"><a class="swiper-card-slide-img" style="background-image:url(assets/img/sample-image-1.jpg)" href="assets/img/sample-image-1.jpg" data-fancybox="gallery"></a></div>
+                            <div class="swiper-slide swiper-card-slide"><a class="swiper-card-slide-img" style="background-image:url(assets/img/sample-image-1.jpg)" href="assets/img/sample-image-1.jpg" data-fancybox="gallery"></a></div>
+                            <div class="swiper-slide swiper-card-slide"><a class="swiper-card-slide-img" style="background-image:url(assets/img/sample-image-1.jpg)" href="assets/img/sample-image-1.jpg" data-fancybox="gallery"></a></div>
+                            <div class="swiper-slide swiper-card-slide"><a class="swiper-card-slide-img" style="background-image:url(assets/img/sample-image-1.jpg)" href="assets/img/sample-image-1.jpg" data-fancybox="gallery"></a></div>
+                        </div>
+                        <div class="d-flex d-xl-none swiper-catalog-pagination"></div>
+                        <div class="d-none d-lg-block swiper-catalog-button swiper-catalog-button-prev"></div>
+                        <div class="d-none d-lg-block swiper-catalog-button swiper-catalog-button-next"></div>
+                    </div>
+                    <div class="d-none d-xl-block swiper-card-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-card-thumbs-thumb">
+                                <div class="swiper-card-thumbs-thumb-img" style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                            </div>
+                            <div class="swiper-slide swiper-card-thumbs-thumb">
+                                <div class="swiper-card-thumbs-thumb-img" style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                            </div>
+                            <div class="swiper-slide swiper-card-thumbs-thumb">
+                                <div class="swiper-card-thumbs-thumb-img" style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                            </div>
+                            <div class="swiper-slide swiper-card-thumbs-thumb">
+                                <div class="swiper-card-thumbs-thumb-img" style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                            </div>
+                            <div class="swiper-slide swiper-card-thumbs-thumb">
+                                <div class="swiper-card-thumbs-thumb-img" style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-grid-price"><span>900<span class="rubl">₽</span>/м²
+                        <span class="card-grid-price-sale">1400<span class="rubl">₽</span>/м²</span></span><span class="card-grid-price-notice">Товар продается кратно упаковке</span>
+                    <hr class="d-none d-xl-block card-grid-separator" />
+                </div>
+                <div class="card-grid-surface"><span class="card-grid-surface-heading">Тип поверхности:
+                        <span class="card-grid-surface-description">Мягкое лаппатирование Lappato/LMR</span></span>
+                    <div class="catalog-filter-surfaces"><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                            <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                        </label></div>
+                </div>
+                <div class="card-grid-size"> <span class="card-grid-size-heading">Размер:</span>
+                    <label class="card-grid-size-variant"><input type="checkbox" /><span>1200x1200</span></label>
+                    <label class="card-grid-size-variant"> <input type="checkbox" /><span>1200x600</span></label>
+                    <label class="card-grid-size-variant"> <input type="checkbox" /><span>1200x1200</span></label>
+                    <label class="card-grid-size-variant"> <input type="checkbox" /><span>1200x600</span></label>
+                    <label class="card-grid-size-variant"> <input type="checkbox" /><span>1200x1200</span></label>
+                    <label class="card-grid-size-variant"> <input type="checkbox" /><span>1200x600</span></label>
+                    <hr class="d-none d-lg-block d-xl-none d-xxl-block card-grid-separator" />
+                </div>
+                <div class="card-grid-buy">
+                    <div class="card-grid-buy-block">
+                        <div class="card-grid-buy-options">
+                            <div class="card-grid-buy-options-amount"><input class="card-grid-buy-options-amount-input" type="text" value="1" /><a class="card-grid-buy-options-amount-button card-grid-buy-options-amount-plus" href="#">+</a><a class="card-grid-buy-options-amount-button card-grid-buy-options-amount-minus" href="#">-</a></div><a class="card-grid-buy-options-buy-button" href="#">добавить в корзину</a>
+                        </div><a class="card-grid-buy-options-calculate" href="#">рассчитать количество</a>
+                    </div>
+                    <div><a class="card-grid-buy-options-one-click-button" href="#">купить в один клик</a></div><span class="card-grid-buy-options-total">
+                        Итого: <span class="card-grid-buy-options-total-price">99 700<span class="rubl">₽</span></span>
+
+                        (<span class="card-grid-buy-options-total-amount">10</span>
+
+                        м²)</span>
+                </div>
+                <div class="card-grid-info"><span class="card-grid-info-volume"><span>1233 </span>
+
+                        м² в упаковке</span><span class="card-grid-info-price"><span>433320<span class="rubl">₽</span>/упак.</span></span>
+                    <div class="card-grid-info-icon card-grid-info-icon-compare"></div>
+                    <div class="card-grid-info-icon card-grid-info-icon-like"></div>
+                    <hr class="d-none d-lg-block d-xl-none card-grid-separator" />
+                </div><a class="card-grid-ready-cases" href="#">
+                    <div class="card-grid-ready-cases-overlay"></div><span>готовое решение с этой плиткой</span>
+                    <div style="background-image:url(assets/img/sample-image-1.jpg)"></div>
+                </a>
+                <div class="card-grid-table card-grid-table-left">
+                    <table>
+                        <tr>
+                            <td>Артикул: </td>
+                            <td>CF9004A036PLR</td>
+                        </tr>
+                        <tr>
+                            <td>Тип:</td>
+                            <td>Фоновая плита</td>
+                        </tr>
+                        <tr>
+                            <td>Вид</td>
+                            <td>Керамический гранит</td>
+                        </tr>
+                        <tr>
+                            <td>Поверхность:</td>
+                            <td>Полированная</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-grid-table card-grid-table-right">
+                    <table>
+                        <tr>
+                            <td>Назначение: </td>
+                            <td>Стена/Пол</td>
+                        </tr>
+                        <tr>
+                            <td>Цвет:</td>
+                            <td>Бежевый</td>
+                        </tr>
+                        <tr>
+                            <td>Размер:</td>
+                            <td>120x120, 60х60, 60х30</td>
+                        </tr>
+                        <tr>
+                            <td>Толщина:</td>
+                            <td>10.5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><span class="other-items-heading">Другие товары из этой коллекции</span></div>
+            </div>
+            <div class="row layout">
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый Очень Хороший</a>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price">
+                                <span>1 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-select"><span>1200x1200</span></div><span class="layout-item-price">
+                                <span>1 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price"> <span class="layout-item-price-sale">1 990<span class="rubl">₽ </span>
+                                </span>
+                                <span>1 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price"> <span class="layout-item-price-sale">109 990<span class="rubl">₽ </span>
+                                </span>
+                                <span>100 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price">
+                                <span>1 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-surfaces">
+                                <ul class="layout-item-surfaces-list">
+                                    <li class="layout-item-surfaces-list-item">
+                                        <div class="layout-item-surfaces-list-item-img-container">
+                                            <div class="layout-item-surfaces-list-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                        </div>
+                                    </li>
+                                    <li class="layout-item-surfaces-list-item">
+                                        <div class="layout-item-surfaces-list-item-img-container">
+                                            <div class="layout-item-surfaces-list-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                        </div>
+                                    </li>
+                                    <li class="layout-item-surfaces-list-item">
+                                        <div class="layout-item-surfaces-list-item-img-container">
+                                            <div class="layout-item-surfaces-list-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                        </div>
+                                    </li>
+                                    <li class="layout-item-surfaces-list-item">
+                                        <div class="layout-item-surfaces-list-item-img-container">
+                                            <div class="layout-item-surfaces-list-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price">
+                                <span>3 790<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability">В наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 layout-item-wrapper">
+                    <div class="layout-item">
+                        <div class="layout-item-content">
+                            <div class="layout-item-thumb"><a class="layout-item-thumb-img" href="#" style="background-image: url(assets/img/sample-image-1.jpg)"></a><a class="layout-item-thumb-compare" href="#"><i></i></a><a class="layout-item-thumb-like" href="#"><i></i></a></div><a class="layout-item-name" href="#">Травертин PGR Медовый</a>
+                            <div class="layout-item-select"><i class="layout-item-select-button"></i><select>
+                                    <option>1200x1200</option>
+                                    <option>600x600</option>
+                                    <option>600x300</option>
+                                </select></div><span class="layout-item-price"> <span class="layout-item-price-sale">10 990<span class="rubl">₽ </span>
+                                </span>
+                                <span>9 590<span class="rubl">₽</span></span>/м²</span><span class="layout-item-availability layout-item-availability-not-available">Нет в наличии</span>
+                            <div class="layout-item-buy">
+                                <div class="layout-item-buy-counter"><input class="layout-item-buy-counter-input" type="text" value="1" /><a class="layout-item-buy-counter-button layout-item-buy-counter-plus" href="#">+</a><a class="layout-item-buy-counter-button layout-item-buy-counter-minus" href="#">-</a></div><a class="layout-item-buy-button" href="#">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><a class="show-more" href="#"><span>вся коллекция колла</span></a></div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="subscribtion">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center subscribtion-heading"><i class="subscribtion-heading-icon"></i><span class="subscribtion-heading-text">Подпишитесь&nbsp;на&nbsp;новости:</span></div>
+                    <form class="subscribtion-form"><input class="subscribtion-form-input" type="email" placeholder="Ваш e-mail" /><input class="subscribtion-form-button" type="submit" value="Подписаться" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="separator gradient"></div>
+            <div class="row footer-content">
+                <div class="d-none d-lg-block col-lg-9 col-xxl-6 footer-content-left">
+                    <div class="row">
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Керамика Будущего</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">О компании</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Новости</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Преимущества </a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Реквизиты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Покупателю</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Политика конфиденциальности</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Как заказать</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Оплата и доставка</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Возврат</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Обратная связь</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Полезная информация</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Статьи</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Сертификаты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Способы укладки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xxl-3 offset-xxl-3 footer-content-right">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-12"><span class="footer-content-column-heading">Следите за нами в соцсетях</span>
+                            <div class="footer-content-column-links"><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/youtube.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/ok.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/vk.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/facebook.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/twitter.svg)"></i></a></div>
+                        </div>
+                        <div class="d-none d-md-block col offset-md-1 offset-lg-0 footer-content-column"><span class="footer-content-column-heading">Принимаем к оплате</span>
+                            <div class="footer-content-column-links"><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/visa.svg)"></i><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/mastercard.svg)"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row justify-content-between py-3"><span class="col-auto footer-copyright-info">© 2018 Все права защищены.</span>
+                <div class="col-auto footer-copyright-developers"><span>Разработка сайта — </span><a class="footer-copyright-developers-link" href="#" target="blank">АйТи-Эскорт</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,774 @@
+.swiper {
+  &-catalog {
+    width: 750px;
+    height: 735px;
+    overflow: hidden;
+
+    &-wrapper {
+      margin: 0 0 30px 0;
+    }
+
+    &-slide {
+      display: block;
+      padding: 30px;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      &-text {
+        width: 50%;
+        min-height: 50%;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.5);
+
+        &-heading {
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 25px;
+          line-height: 32px;
+        }
+
+        &-subheading {
+          font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 25px;
+          line-height: 40px;
+        }
+
+        &-description {
+          padding: 20px 0 0 0;
+          font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+          color: $white;
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 100%;
+        z-index: -1;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-pagination {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px 0 40px 0;
+
+      &-bullet {
+        min-width: 1px;
+        width: 100%;
+        flex-basis: fill;
+        height: 20px;
+        border-bottom: 3px solid $gray-200;
+        box-sizing: unset;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover,
+        &:focus {
+          outline: none;
+        }
+
+        &:not(:last-child) {
+          margin: 0 15px 0 0;
+        }
+
+        &-active {
+          width: 200%;
+          border-bottom: 3px solid $orange;
+        }
+      }
+    }
+
+    &-button {
+      position: absolute;
+      top: 45%;
+      z-index: 2;
+      width: 48px;
+      height: 48px;
+      border: 3px solid $gray-500;
+      background: center / 15px 15px url("../../assets/img/icons/left.svg") no-repeat;
+      cursor: pointer;
+      transition: all 0.15s;
+
+      &:hover,
+      &:focus {
+        border-color: $orange;
+      }
+
+      &-prev {
+        left: 15px;
+      }
+
+      &-next {
+        right: 405px;
+        transform: rotate(180deg);
+      }
+
+      &-disabled {
+        filter: opacity(0.3);
+        border-color: $gray-500;
+        cursor: default;
+
+        &:hover,
+        &:focus {
+          border-color: $gray-500;
+        }
+      }
+    }
+  }
+
+  &-thumbs {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 360px;
+    height: 735px;
+    overflow: hidden;
+
+    &-thumb {
+      width: 172px;
+      height: 172px;
+
+      &-img {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.swiper-slide-thumb-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  border: 2px solid $orange;
+  cursor: pointer;
+}
+
+.characteristics-block {
+  margin: -15px 0 30px 0;
+
+  &-heading {
+    display: inline-block;
+    margin: 8px 0 15px 0;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-200;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  // &-collection {
+  //   font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+  //   color: $gray-200;
+  //   text-transform: uppercase;
+  //   font-size: 80px;
+  //   line-height: 120px;
+  // }
+
+  &-swiper {
+    position: relative;
+    max-height: 630px;
+    overflow-y: hidden;
+  }
+}
+
+.characteristic {
+  position: relative;
+  padding: 15px 0;
+
+  &-img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 77px;
+    height: 77px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-text {
+    display: block;
+    margin: 0 0 0 93px;
+  }
+
+  &-heading {
+    display: flex;
+    align-items: center;
+    margin: 0 15px 10px 0;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    color: $gray-700;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  &-description {
+    margin: 0 15px 0 0;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-700;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+//-------------------
+
+.layout {
+  &-item {
+    height: 100%;
+
+    &-wrapper {
+      margin: 0 0 30px 0;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+      transition: all 0.1s;
+
+      &:hover,
+      &:focus {
+        box-shadow: 8.485px 8.485px 40px 0 rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &-thumb {
+      position: relative;
+      width: 100%;
+      margin: 0 0 25px 0;
+      background-position: center center;
+      background-size: cover;
+
+      &-img {
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-compare {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 34px;
+        width: 32px;
+        height: 32px;
+        background: rgba(0, 0, 0, 0.2);
+        transition: all 0.1s;
+
+        & > i {
+          display: block;
+          height: 32px;
+          background: center / 20px 20px url("../../assets/img/icons/arrow-double.svg") no-repeat;
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      &-like {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        background: rgba(0, 0, 0, 0.2);
+        transition: all 0.1s;
+
+        & > i {
+          display: block;
+          height: 32px;
+          background: center / 20px 20px url("../../assets/img/icons/heart.svg") no-repeat;
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    &-name {
+      flex-grow: 2;
+      max-width: 100%;
+      margin: 0 0 10px 0;
+      color: $gray-700;
+      font-size: 17px;
+      line-height: 26px;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+
+      &:hover,
+      &:focus {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+
+    &-color {
+      color: $gray-700;
+      font-size: 15px;
+      line-height: 26px;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    }
+
+    &-id {
+      color: $gray-200;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    }
+
+    &-surfaces {
+      width: 100%;
+      margin: 0 0 10px 0;
+
+      &-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &-item {
+          display: inline-block;
+          max-width: 40px;
+          width: 20%;
+          border: 1px solid gray-50;
+          cursor: pointer;
+
+          &.selected {
+            border: 1px solid $orange;
+          }
+
+          &-img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &-container {
+              position: relative;
+              padding-top: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &-select {
+      position: relative;
+      margin: 0 0 15px 0;
+
+      & select {
+        width: 140px;
+        height: 32px;
+        padding: 0 0 0 20px;
+        background: transparent;
+        border: 2px solid $gray-50;
+        border-radius: 0;
+        appearance: none;
+        color: $gray-700;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+
+        &::-ms-expand {
+          display: none;
+        }
+      }
+
+      &-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2px;
+        z-index: -1;
+        width: 32px;
+        height: 32px;
+        border-left: 2px solid $gray-50;
+        background: center / 8px 8px url("../../assets/img/icons/arrow-down.svg") no-repeat;
+      }
+
+      & span {
+        color: $gray-700;
+        font-size: 14px;
+        line-height: 32px;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      }
+    }
+
+    &-price {
+      max-width: 100%;
+      margin: 0 0 5px 0;
+      color: $gray-700;
+      font-size: 26px;
+      line-height: 26px;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+
+      & span {
+        display: inline-block;
+      }
+
+      &-sale {
+        text-decoration: line-through;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+
+        & .rubl {
+          display: none;
+        }
+      }
+    }
+
+    &-availability {
+      margin: 0 0 10px 0;
+      color: $green;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+
+      &-not-available {
+        color: $red;
+      }
+    }
+
+    &-buy {
+      display: flex;
+      width: 100%;
+
+      &-counter {
+        position: relative;
+        flex-basis: 50%;
+        margin: 0 15px 0 0;
+
+        &-input {
+          width: 100%;
+          height: 32px;
+          padding: 0 35px;
+          border: 2px solid $gray-50;
+          border-radius: 0;
+          color: $gray-200;
+          font-size: 14px;
+          line-height: 28px;
+          font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+          text-align: center;
+          -moz-appearance: textfield;
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        &-button {
+          display: block;
+          position: absolute;
+          top: 2px;
+          width: 32px;
+          height: 28px;
+          color: $gray-200;
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+          font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+
+          &:hover,
+          &:focus {
+            background-color: $gray-100;
+            color: $gray-200;
+            text-decoration: none;
+          }
+
+          &:active {
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        &-minus {
+          left: 0;
+          border-right: 2px solid $gray-50;
+        }
+
+        &-plus {
+          right: 0;
+          border-left: 2px solid $gray-50;
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        flex-basis: 50%;
+        border: 2px solid $gray-600;
+        color: $white;
+        font-family: "Merriweather", "Times New Roman", "Times", serif;
+        font-size: 14px;
+        line-height: 28px;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        background: $orange;
+        transition: all 0.1s ease;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          background: center url("../../assets/img/icons/shopping-basket-white.svg") no-repeat;
+        }
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// adaptive styles
+
+@media screen and (max-width: 1579px) {
+  .swiper {
+    &-catalog {
+      width: 100%;
+      height: auto;
+
+      &-slide {
+        height: 735px;
+      }
+
+      &-button {
+        top: 40%;
+
+        &-next {
+          right: 15px;
+        }
+      }
+    }
+
+    &-thumbs {
+      position: relative;
+      right: 0;
+      width: 100%;
+      height: auto;
+      margin: 30px 0 0 0;
+
+      &-thumb {
+        height: 160px;
+      }
+    }
+  }
+
+  .characteristics-block {
+    &-heading {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &-swiper {
+      max-height: 674px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .swiper {
+    &-catalog {
+      height: auto;
+
+      &-slide {
+        height: 610px;
+
+        &-text {
+          width: 50%;
+        }
+      }
+
+      &-button {
+        top: 35%;
+      }
+    }
+
+    &-thumbs {
+      &-thumb {
+        height: 130px;
+      }
+    }
+  }
+
+  .characteristics-block {
+    &-swiper {
+      max-height: 548px;
+    }
+  }
+
+  .characteristic {
+    &-text {
+      margin: 0;
+    }
+
+    &-heading {
+      height: 77px;
+      margin: 0 0 15px 93px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper {
+    &-catalog {
+      &-slide {
+        height: 690px;
+
+        // &-text {
+        //   width: 50%;
+        //   height: 50%;
+        // }
+      }
+    }
+
+    &-thumbs {
+      &-thumb {
+        height: 150px;
+      }
+    }
+  }
+
+  .characteristics-block {
+    &-heading {
+      text-decoration: none;
+    }
+
+    &-swiper {
+      max-height: 100%;
+
+      .swiper-wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .characteristic {
+    &-text {
+      margin: 0 0 0 93px;
+    }
+
+    &-heading {
+      height: auto;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper {
+    &-catalog {
+      height: auto;
+
+      &-slide {
+        padding: 0;
+        height: auto;
+
+        &-text {
+          width: 100%;
+          min-height: unset;
+          height: auto;
+          padding: 0;
+          margin: 0 0 25px 0;
+          background: none;
+
+          &-heading,
+          &-subheading {
+            display: inline-block;
+            width: 100%;
+            color: $gray-700;
+            font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+            text-transform: none;
+            font-size: 17px;
+            line-height: 26px;
+          }
+
+          &-description {
+            color: $gray-700;
+          }
+        }
+
+        &-img {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .layout {
+    &-item {
+      &-buy {
+        flex-direction: column;
+
+        &-counter,
+        &-button {
+          flex-basis: 100%;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .characteristic {
+    &-text {
+      margin: 0;
+    }
+
+    &-heading {
+      height: 77px;
+      margin: 0 0 15px 93px;
+    }
+  }
+
+  .layout {
+    &-item {
+      &-content {
+        padding: 15px 15px 30px 15px;
+      }
+    }
+  }
+}

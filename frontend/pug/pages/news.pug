@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Новости
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                span.
+                  Новости
+        h1.page-h1 Название акции
+        .news
+          .row
+            .grid
+              .grid-sizer
+              .grid-item.grid-big 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-date 3 августа
+                    span.grid-item-text-heading Приглашаем своих партнеров на обучающий
+                      |
+                      |
+                      strong семинар 2018
+                    .d-sm-none.grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+                      |Технический керамогранит — 
+                      |самый совершенный вид керамогранита, керамика будущего. 
+                      |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                      |Не имеет ограничений в областях применения.
+              .grid-item
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-date 3 августа
+                    span.grid-item-text-heading Название новости в несколько строчек
+                    .d-sm-none.grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+              .grid-item 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-date 3 августа
+                    span.grid-item-text-heading Название новости в несколько строчек
+                    .d-sm-none.grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+                    p.grid-item-text-description 
+              .grid-item 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-date 3 августа
+                    span.grid-item-text-heading Название новости очень, очень длинное в три строчки
+                    .d-sm-none.grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+              .grid-item 
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                  .grid-item-text
+                    span.grid-item-text-date 3 августа
+                    span.grid-item-text-heading Технический керамогранит
+                    .d-sm-none.grid-item-text-button
+                      span.grid-item-text-button-text Подробнее
+                      i.grid-item-text-button-icon
+        .bottom-news
+          .row
+            .col-12.col-sm-6.col-lg-3
+              span.bottom-news-date 21 июня 2018
+              a(href="#").bottom-news-heading.
+                Приглашаем посетить наш стенд на 23-й международной
+                специализированной выставке ВолгаСтройЭкспо
+            .col-12.col-sm-6.col-lg-3
+              span.bottom-news-date 21 июня 2018
+              a(href="#").bottom-news-heading.
+                Приглашаем посетить наш стенд 
+                на 24-ой крупнейшей в России
+            .col-12.col-sm-6.col-lg-3
+              span.bottom-news-date 21 июня 2018
+              a(href="#").bottom-news-heading.
+                Приглашаем посетить наш стенд на 23-й международной
+                специализированной выставке ВолгаСтройЭкспо
+            .col-12.col-sm-6.col-lg-3
+              span.bottom-news-date 21 июня 2018
+              a(href="#").bottom-news-heading.
+                Приглашаем посетить наш стенд 
+                на 24-ой крупнейшей в России
+        .read-more
+          .row
+            .col-12
+              a(href="#").read-more-button Читать еще
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

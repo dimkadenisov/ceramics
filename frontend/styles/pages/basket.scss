@@ -1,0 +1,577 @@
+.basket-items-table {
+  margin: 0 0 30px 0;
+
+  & table {
+    width: 100%;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    color: $gray-700;
+
+    & thead tr {
+      background-color: $gray-100;
+    }
+
+    & tr {
+      &:nth-child(even) {
+        background-color: $gray-100;
+      }
+    }
+
+    & th {
+      padding: 18px 15px 18px 0;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      &:first-child {
+        padding: 18px 10px 18px 30px;
+        text-align: left;
+      }
+    }
+
+    & td {
+      padding: 30px 15px 30px 0;
+
+      &:first-child {
+        padding: 30px 10px 30px 30px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.basket-item {
+  vertical-align: middle;
+
+  &-product {
+    position: relative;
+  }
+
+  &-img {
+    position: absolute;
+    top: calc(50% - 40px);
+
+    & a {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-sale {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      bottom: -10px;
+      left: -10px;
+      border-radius: 50%;
+      background: $red;
+      text-align: center;
+      line-height: 36px;
+      color: $white;
+    }
+  }
+
+  &-name {
+    display: inline-block;
+    margin: 0 0 0 100px;  //
+
+    & > span:first-child {
+      display: inline-block;
+      width: 100%;
+    }
+
+    &-link {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+      color: $gray-700;
+
+      &:hover,
+      &:focus {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+
+    &-tooltip {
+      display: inline-block;
+      position: relative;
+      width: 24px;
+      padding: 1px 0;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+      color: $white;
+      text-align: center;
+      border-radius: 50%;
+      background: $orange;
+      cursor: pointer;
+
+      &-text {
+        display: inline-block;
+        position: absolute;
+        bottom: 145%;
+        left: 20%;
+        max-width: 440px;
+        width: 2000%;
+        padding: 20px;
+        margin: 0 0 0 -60px;
+        background: $white;
+        box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        color: $gray-200;
+        text-align: left;
+        font-family: "Merriweather", "Times New Roman", "Times", serif;
+        font-size: 14px;
+        z-index: 2;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 15.4%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: $white transparent transparent transparent;
+        }
+
+        &-link {
+          color: $gray-200;
+          font-family: "Merriweather", "Times New Roman", "Times", serif;
+          font-size: 14px;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $gray-200;
+          }
+        }
+      }
+    }
+
+    &-size,
+    &-surface {
+      display: inline-block;
+      padding: 5px;
+      margin: 5px 0 0 0;
+      border: 2px solid $gray-50;
+    }
+  }
+
+  &-price {
+    position: relative;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 26px;
+
+    &-sale {
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 17px;
+      text-decoration: line-through;
+
+      & .rubl {
+        display: none;
+      }
+    }
+
+    &-notice {
+      display: inline-block;
+      width: 100%;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 15px;
+    }
+
+    & > span {
+      white-space: nowrap;
+    }
+  }
+
+  &-amount {
+    position: relative;
+    max-width: 143px;
+    width: 100%;
+
+    &-input {
+      width: 100%;
+      height: 32px;
+      padding: 0 35px;
+      border: 2px solid $gray-50;
+      border-radius: 0;
+      color: $gray-200;
+      font-size: 14px;
+      line-height: 28px;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+      text-align: center;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+
+    &-button {
+      display: block;
+      position: absolute;
+      top: 2px;
+      width: 30px;
+      height: 28px;
+      color: $gray-200;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+
+      &:hover,
+      &:focus {
+        background-color: $gray-100;
+        color: $gray-200;
+        text-decoration: none;
+      }
+
+      &:active {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &-minus {
+      left: 2px;
+      border-right: 2px solid $gray-50;
+    }
+
+    &-plus {
+      right: 2px;
+      border-left: 2px solid $gray-50;
+    }
+  }
+
+  &-total {
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 26px;
+
+    &-text {
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      font-size: 15px;
+    }
+
+    & > span {
+      white-space: nowrap;
+    }
+  }
+
+  &-close {
+    & a {
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 50%;
+
+      &:hover .basket-item-close-icon,
+      &:focus .basket-item-close-icon {
+        stroke: $red;
+      }
+    }
+
+    &-icon {
+      fill: none;
+      stroke: $gray-200;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+  }
+}
+
+.basket-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-promocode {
+  position: relative;
+  flex-basis: 30%;
+  margin: 0 0 20px 0;
+
+  & input {
+    height: 48px;
+    width: 100%;
+    padding: 0 60px 0 20px;
+    border: 3px solid $gray-100;
+    border-radius: 0;
+    color: $gray-200;
+    font-size: 14px;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+  }
+
+  & a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background: $gray-600;
+    border: 2px solid $gray-600;
+    color: $white;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+      border-color: $gray-700;
+    }
+  }
+}
+
+.basket-summary {
+  flex-basis: 30%;
+
+  &-line {
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+  }
+
+  &-text {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    font-size: 25px;
+  }
+
+  &-price {
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 26px;
+    white-space: nowrap;
+
+    &-sale {
+      text-decoration: line-through;
+      white-space: nowrap;
+    }
+  }
+}
+
+.basket-buy-button {
+  display: block;
+  height: 48px;
+  margin: 30px 0 60px 0;
+  border: 3px solid $gray-600;
+  background: $orange;
+  color: $white;
+  font-family: "Merriweather", "Times New Roman", "Times", serif;
+  font-size: 14px;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+    box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .basket-items-table {
+    margin: 0 -15px 30px -15px;
+
+    table {
+      & tr {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .basket-item {
+    &-amount {
+      &-position {
+        min-width: 130px;
+      }
+    }
+
+    &-img {
+      margin: 0 15px;
+    }
+
+    &-name {
+      margin: 0 0 0 110px;
+
+      &-size,
+      &-surface {
+        display: block;
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+    }
+
+    &-price {
+      font-size: 20px;
+      line-height: 1.2;
+
+      &-sale {
+        font-size: 17px;
+      }
+    }
+
+    &-total {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  .basket-promocode {
+    flex-basis: 40%;
+  }
+
+  .basket-summary {
+    flex-basis: 40%;
+
+    &-price {
+      font-size: 20px;
+      line-height: 1.2;
+
+      &-sale {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .basket-item {
+    display: block;
+    position: relative;
+
+    & td {
+      display: block;
+    }
+
+    &-product {
+      padding: 20px 30px 20px 0;
+    }
+
+    &-img {
+      margin: 0 15px 0 0;
+    }
+
+    &-name {
+      margin: 0 0 0 100px;
+
+      &-tooltip {
+        &-text {
+          width: 150px;
+          margin: 0 0 0 -68px;
+
+          &::after {
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    &-price {
+      &-position {
+        width: 33%;
+        float: left;
+      }
+    }
+
+    &-amount-position {
+      width: 33%;
+      float: left;
+    }
+
+    &-total {
+      &-position {
+        width: 33%;
+        float: left;
+        text-align: right;
+      }
+    }
+
+    &-close-position {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .basket-promocode,
+  .basket-summary {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .basket-items-table {
+    margin: 0 -15px 40px -15px;
+
+    & table {
+      & tr {
+        padding: 10px 0;
+      }
+
+      & td {
+        padding: 5px 15px;
+      }
+    }
+  }
+
+  .basket-item {
+    &-price-position,
+    &-amount-position,
+    &-total-position {
+      width: 100%;
+      float: left;
+      text-align: left;
+    }
+
+    &-price {
+      display: table; //
+
+      & > span {
+        display: table-cell;
+        white-space: nowrap;
+      }
+
+      &-sale ~ span {
+        text-align: center;
+      }
+
+      &-price {
+        width: 100%;
+      }
+
+      &-notice {
+        width: unset;
+      }
+    }
+
+    &-amount {
+      max-width: 100%;
+    }
+
+    &-total {
+      margin: 0;
+    }
+
+    &-close-position {
+      top: 30px;
+    }
+  }
+
+  .basket-bottom {
+    height: 307px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .basket-promocode {
+    flex-basis: 48px;
+  }
+
+  .basket-summary {
+    flex-basis: unset;
+  }
+}

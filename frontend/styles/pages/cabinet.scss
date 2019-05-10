@@ -1,0 +1,151 @@
+/*________ pageCabinet ________*/
+
+.page-cabinet h4 {
+  font-size: 17px;
+  font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 13px 30px;
+  border-bottom: solid 1px $gray-359;
+}
+
+.user-events {
+  padding-top: 30px;
+  margin-top: 35px;
+  border-top: solid 1px $gray-359;
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    border: solid 1px $gray-359;
+    font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+    padding-bottom: 26px;
+    width: 263px;
+    margin-bottom: 30px;
+
+    & ul {
+      list-style: none;
+      padding: 30px 28px;
+      margin: 0;
+      min-height: 242px;
+    }
+
+    & li {
+      margin-bottom: 10px;
+      line-height: 22px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $gray-700;
+      transition: 0.3;
+
+      :hover {
+        border-bottom: none;
+      }
+    }
+
+    & .more-inform-order {
+      text-align: right;
+      padding: 0 30px;
+      text-decoration: none;
+
+      &:hover a {
+        color: $orange;
+        text-decoration: none;
+      }
+
+      & a {
+        color: $gray-200;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+.my-orders {
+  & li {
+    & a {
+      border-bottom: solid 1px $gray-700;
+      color: $gray-700;
+      transition: 0.3s;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+
+    & .disable {
+      color: $gray-200;
+      border-bottom-color: $gray-200;
+    }
+
+    & .active {
+      color: $green;
+      border-bottom-color: $green;
+    }
+  }
+}
+
+
+.customer-orders {
+  & .time {
+    color: $gray-200;
+  }
+
+  & .name {
+    border-bottom: solid 1px $gray-200;
+  }
+}
+
+.operations-history {
+  & li {
+    color: $green;
+  }
+
+  & .disable {
+    color: $orange;
+  }
+
+  & .number {
+    font-size: 17px;
+  }
+}
+
+.my-clients {
+  & .number {
+    font-size: 17px;
+  }
+
+  & .name {
+    border-bottom: solid 1px $gray-200;
+  }
+}
+
+@media only screen and (max-width: 1579px) {
+  .user-events {
+    flex-wrap: wrap;
+
+    &-item {
+      width: calc(50% - 15px);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .user-events {
+    margin-top: 0;
+
+    &-item {
+      width: 100%;
+
+      & ul,
+      & h4 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+/*________ End pageCabinet ________*/

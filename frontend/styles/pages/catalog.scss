@@ -1,0 +1,339 @@
+.grid {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 40px 0;
+
+  &-sizer {
+    width: 25%;
+  }
+
+  &-item {
+    display: block;
+    width: 25%;
+    height: 390px;
+    padding: 15px;
+
+    &-content {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      text-decoration: none;
+      box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+
+      &:hover {
+        box-shadow: 8.485px 8.485px 40px 0 rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 30px 30px;
+
+      &-heading {
+        margin: 0 15px 0 0;
+        color: $white;
+        font-family: "Museo Sans Cyrl 700", "Helvetica", "Arial", sans-serif;
+        font-size: 25px;
+        line-height: 32px;
+        text-transform: uppercase;
+      }
+
+      &-button {
+        display: inline-block;
+        color: $white;
+        text-decoration: none;
+
+        &-text {
+          display: none;
+        }
+
+        &-icon {
+          display: inline-block;
+          width: 12px;
+          height: 20px;
+          background: center url("../../assets/img/icons/left-r.svg") no-repeat;
+        }
+      }
+
+      &-description {
+        padding: 15px 0 0 0;
+        color: $white;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &-big {
+    width: 780px;
+    height: 780px;
+  }
+
+  &-tall {
+    height: 780px;
+  }
+
+  &-long {
+    width: 780px;
+  }
+}
+
+.grid-big .grid-item-text {
+  top: 30px;
+  left: 30px;
+  width: 50%;
+  min-height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// adaptive styles
+
+@media screen and (max-width: 1579px) {
+  .grid {
+    &-sizer {
+      width: 33.333%;
+    }
+
+    &-item {
+      width: 33.333%;
+      height: 380px;
+    }
+
+    &-big {
+      width: 760px;
+      height: 760px;
+    }
+
+    &-tall {
+      height: 760px;
+    }
+
+    &-long {
+      width: 760px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .grid {
+    &-sizer {
+      width: 33.333%;
+    }
+
+    &-item {
+      width: 33.333%;
+      height: 320px;
+    }
+
+    &-big {
+      width: 640px;
+      height: 640px;
+    }
+
+    &-tall {
+      height: 640px;
+    }
+
+    &-long {
+      width: 640px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .grid {
+    &-sizer {
+      width: 50%;
+    }
+
+    &-item {
+      width: 50%;
+      height: 360px;
+
+      &-text-heading {
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      }
+    }
+
+    &-big {
+      width: 720px;
+      height: 360px;
+
+      & .grid-item-text {
+        bottom: 30px;
+        height: auto;
+      }
+    }
+
+    &-tall {
+      height: 720px;
+    }
+
+    &-long {
+      width: 720px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-h1 {
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-200;
+  }
+
+  .grid {
+    &-item {
+      height: 270px;
+
+      &-text-heading {
+        font-size: 22px;
+      }
+    }
+
+    &-big {
+      width: 540px;
+      height: 270px;
+
+      & .grid-item-text {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+      }
+    }
+
+    &-tall {
+      height: 540px;
+    }
+
+    &-long {
+      width: 540px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .page-h1 {
+    font-size: 28px;
+  }
+
+  .grid {
+    &-sizer {
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      height: auto;
+
+      &-content {
+        height: auto;
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      &-overlay {
+        display: none;
+      }
+
+      &-img {
+        padding-top: 100%;
+      }
+
+      &-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 25px 0;
+
+        &-heading {
+          padding: 0 0 20px 0;
+          color: $gray-700;
+          text-transform: none;
+          font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+          font-size: 25px;
+        }
+
+        &-button {
+          order: 3;
+          padding: 12px;
+          text-align: center;
+          background: $gray-600;
+
+          &-text {
+            display: inline-block;
+            padding: 0 10px 0 0;
+            color: $white;
+            font-family: "Merriweather", "Times New Roman", "Times", serif;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+          }
+
+          &-icon {
+            height: 12px;
+          }
+        }
+
+        &-description {
+          display: inline-block;
+          padding: 0 0  20px 0;
+          color: $gray-700;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-h1 {
+    font-size: 25px;
+  }
+
+  .page-h2 {
+    color: $gray-700;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+
+  .grid {
+    &-item {
+      &-text {
+        &-heading {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

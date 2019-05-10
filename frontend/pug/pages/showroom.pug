@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Шоурум
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                span.
+                  Шоурум
+        h1.page-h1 Шоурум
+        
+        .showroom-grid
+          a(href="#").showroom-grid-item
+            .grid-item-overlay
+            .showroom-grid-item-img(style="background-image: url(assets/img/sample-image-3.png)")
+            .showroom-grid-item-text
+              span.showroom-grid-item-price
+                |800
+                |
+                |
+                span.rubl ₽
+                |
+                |
+                span.showroom-grid-item-price-sale 1 500
+                  span.rubl ₽
+              span.showroom-grid-item-stock-name длинное, название в три строчки этой
+                |
+                |
+                strong акции
+              span.showroom-grid-item-stock-time
+                span.showroom-grid-item-stock-time-start 3 августа
+                |-
+                span.showroom-grid-item-stock-time-end 12 сентября
+              p.showroom-grid-item-stock-description 
+                |Технический керамогранит — 
+                |самый совершенный вид керамогранита, керамика будущего. 
+                |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                |Не имеет ограничений в областях применения.
+              .d-sm-none.grid-item-text-button
+                span.grid-item-text-button-text Подробнее
+                i.grid-item-text-button-icon
+          a(href="#").showroom-grid-item
+            .grid-item-overlay
+            .showroom-grid-item-img(style="background-image: url(assets/img/sample-image-10.png)")
+            .showroom-grid-item-text
+              span.showroom-grid-item-price
+                |800
+                |
+                |
+                span.rubl ₽
+                |
+                |
+                span.showroom-grid-item-price-sale 1 500
+                  span.rubl ₽
+              span.showroom-grid-item-stock-name длинное, название в три строчки этой
+                |
+                |
+                strong акции
+              span.showroom-grid-item-stock-time
+                span.showroom-grid-item-stock-time-start 3 августа
+                |-
+                span.showroom-grid-item-stock-time-end 12 сентября
+              p.showroom-grid-item-stock-description 
+                |Технический керамогранит — 
+                |самый совершенный вид керамогранита, керамика будущего. 
+                |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                |Не имеет ограничений в областях применения.
+              .d-sm-none.grid-item-text-button
+                span.grid-item-text-button-text Подробнее
+                i.grid-item-text-button-icon
+          a(href="#").showroom-grid-item
+            .grid-item-overlay
+            .showroom-grid-item-img(style="background-image: url(assets/img/sample-image-2.png)")
+            .showroom-grid-item-text
+              span.showroom-grid-item-price
+                |800
+                |
+                |
+                span.rubl ₽
+                |
+                |
+                span.showroom-grid-item-price-sale 1 500
+                  span.rubl ₽
+              span.showroom-grid-item-stock-name длинное, название в три строчки этой
+                |
+                |
+                strong акции
+              span.showroom-grid-item-stock-time
+                span.showroom-grid-item-stock-time-start 3 августа
+                |-
+                span.showroom-grid-item-stock-time-end 12 сентября
+              p.showroom-grid-item-stock-description 
+                |Технический керамогранит — 
+                |самый совершенный вид керамогранита, керамика будущего. 
+                |Имеет ограничения по дизайнам, но «отличные» технические свойства. 
+                |Не имеет ограничений в областях применения.
+              .d-sm-none.grid-item-text-button
+                span.grid-item-text-button-text Подробнее
+                i.grid-item-text-button-icon
+          
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

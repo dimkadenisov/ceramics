@@ -1,0 +1,252 @@
+.catalog-filter {
+  padding: 20px 65px 35px 65px;
+  margin: 0 0 40px 0;
+  background: $gray-100;
+
+  &-closed {
+    height: 64px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  &-heading {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 40px 0;
+    color: $gray-700;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    cursor: pointer;
+
+    & > span {
+      position: relative;
+
+      &::after {
+        content: url("../../assets/img/icons/up.svg");
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        width: 12px;
+        margin: 0 0 0 5px;
+        transition: all 0.2s;
+      }
+    }
+
+    &-closed > span::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-part {
+    margin: 0 60px 60px 0;
+
+    &-name {
+      display: block;
+      margin: 0 0 25px 0;
+      color: $gray-700;
+      font-size: 15px;
+      font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    }
+  }
+
+  &-surfaces {
+    margin: 0 0 4px 0;
+
+    &-characteristics-list {
+      padding: 0;
+      margin: 15px 0 40px 0;
+      list-style: none;
+
+      &-item {
+        position: relative;
+        padding: 0 0 0 26px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+        counter-increment: step-counter;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 6px;
+          height: 6px;
+          margin: 9px 0 0 0;
+          background: $orange;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &-sizes {
+    column-count: 3;
+  }
+
+  &-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &-label {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin: 0 10px 3px 0;
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 2px solid $gray-359;
+    }
+
+    &-new::after {
+      content: url("../../assets/img/icons/new.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      z-index: 3;
+    }
+  }
+
+  &-checkbox:checked {
+    & + .catalog-filter-img::before {
+      border: 3px solid $orange;
+    }
+
+    & + .catalog-filter-checkmark {
+      background-color: $orange;
+      border: 2px solid $gray-600;
+    }
+  }
+
+  &-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 35px;
+    margin: 0 0 12px 0;
+    cursor: pointer;
+    color: $gray-700;
+    font-size: 15px;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    user-select: none;
+
+    &:hover ~ .catalog-filter-checkmark {
+      background-color: $gray-600;
+    }
+  }
+
+  &-checkmark {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: $white;
+    border: 2px solid $gray-359;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-button {
+    padding: 12px 27px;
+    border: 3px solid $gray-600;
+    border-radius: 0;
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $white;
+    transition: all 0.2s;
+
+    &-submit {
+      margin: 0 7px 0 0;
+      background-color: $orange;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 24px 0 rgba(249, 105, 14, 0.5), 0 0 24px 0 rgba(249, 105, 14, 0.004);
+      }
+    }
+
+    &-reset {
+      margin: 0 0 0 7px;
+      background-color: $gray-600;
+
+      &:hover,
+      &:focus {
+        border: 3px solid $gray-700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1579px) {
+  .catalog-filter {
+    &-part {
+      margin: 0 0 40px 0;
+    }
+
+    &-sizes {
+      column-count: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .catalog-filter {
+    &-part {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .catalog-filter {
+    padding: 20px 15px;
+    margin: 0 -15px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .catalog-filter {
+    &-buttons {
+      flex-direction: column;
+    }
+
+    &-button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/jquery-ui.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/swiper.min.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Профиль</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="d-none d-lg-block top-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a data-fancybox="data-fancybox" data-src="#popup-ask-question" href="javascript:;">Задать вопрос</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-line">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto"><i class="d-inline-block d-lg-none middle-line-burger-menu"></i>
+                        <div class="logo"><a class="logo-link" href="#"><img class="logo-img" src="assets/img/logo.svg" alt="logo" /></a></div>
+                        <div class="d-none d-lg-inline-block description"><span class="description-text">Интернет-магазин<br>профессионального керамогранита</span></div>
+                        <div class="nav-list-scrolled-wrapper">
+                            <ul class="d-none row nav-list-scrolled">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Готовые решения</a></li>
+                                <li><a href="#">Шоурум</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form class="d-none d-sm-inline-block search-form align-middle"><i class="d-none d-sm-inline-block d-xl-none search-form-icon"></i><input class="d-none d-xl-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-none d-xl-block search-form-button" type="submit" value="" /></form>
+                        <div class="hot-line align-middle"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a>
+                            <p class="d-lg-block d-none hot-line-text">Звонок по России бесплатный</p>
+                            <div class="shopping-basket"><a href="#"><span class="shopping-basket-count">17</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="d-none d-lg-block bottom-nav">
+            <div class="container">
+                <ul class="row justify-content-xl-start justify-content-xxl-center bottom-nav-list">
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Каталог</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Готовые решения</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Шоурум</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Где купить</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Партнерам</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown d-lg-none">
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <form class="search-form search-form-dropdown"><input class="d-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-block search-form-button" type="submit" value="" /></form>
+                <ul class="col-auto dropdown-list">
+                    <li><a class="dropdown-list-link isparent" href="#">Каталог</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог <span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Hello</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link isparent" href="#">Готовые решения</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог<span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Технический керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link" href="#">Шоурум</a></li>
+                    <li><a class="dropdown-list-link" href="#">Где купить</a></li>
+                    <li><a class="dropdown-list-link" href="#">Партнерам</a></li>
+                    <li><a class="dropdown-list-link" href="#">О компании</a></li>
+                    <li><a class="dropdown-list-link" href="#">Полезная информация</a></li>
+                    <li><a class="dropdown-list-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hot-line-tel-dropdown-wrapper">
+                <div class="container"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-xl-9">
+                    <div class="site-breadcrumbs">
+                        <div class="site-breadcrumbs-item"><a href="/">Главная</a> / </div>
+                        <div class="site-breadcrumbs-item"><span>Профиль</span></div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div class="header-page">
+                    <h1 class="page-h1">Профиль</h1>
+                </div>
+                <div class="partner-account">
+                    <div class="row justify-content-between">
+                        <div class="col-3 d-none d-xl-block">
+                            <div class="side-menu">
+                                <ul>
+                                    <li> <a href="cabinet.html">Кабинет</a></li>
+                                    <li><a href="profile.html">Профиль</a></li>
+                                    <li><a href="#">Мои заказы</a></li>
+                                    <li><a href="#">Заказы клиентов</a></li>
+                                    <li><a href="#">Агенты</a></li>
+                                    <li><a href="#">Выплаты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-9">
+                            <div class="panel-inform-wrapper">
+                                <div class="panel-inform-block panel-inform-block-status gray">
+                                    <div class="panel-inform-block-shell">
+                                        <h3>Статус <br />партнера</h3>
+                                        <div class="status"><span>золотой</span></div>
+                                    </div>
+                                </div>
+                                <div class="panel-inform-block panel-inform-block-percent">
+                                    <div class="panel-inform-block-shell">
+                                        <h3>Скидка</h3>
+                                        <div class="percent">10%</div>
+                                    </div>
+                                </div>
+                                <div class="panel-inform-block gray">
+                                    <div class="panel-inform-block-shell">
+                                        <h3>Баланс</h3>
+                                        <div class="balans">128 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="panel-inform-block panel-inform-block-numbers gray">
+                                    <div class="panel-inform-block-shell">
+                                        <div class="numbers-row">
+                                            <div class="inc button"></div>
+                                            <div class="input-shell"><input type="number" name="" value="8" min="1" tabindex="0" /><span>%</span></div>
+                                            <div class="dec button">-</div>
+                                        </div>
+                                        <div class="promocode">
+                                            <h3>Промокод</h3>
+                                            <div class="promocode-view" id="copy-el">31cvrthha</div><a class="promocode-btn" href="#" onclick="CopyToClipboard('copy-el')">Скопировать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-wrapper">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="profile-img" style="background-image: url(assets/img/user-ava.jpg)"></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="nav-table nav-table-profile mt-none">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Ф.И.О.</td>
+                                                        <td><strong>Александр Федорович Смирнов</strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Е-mail</td>
+                                                        <td>seller 7777@mail.ru</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ИНН</td>
+                                                        <td>7604049153</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>КПП</td>
+                                                        <td>7604049153</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ОГРН</td>
+                                                        <td>1027600680744</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Наименование банка получателя</td>
+                                                        <td>Калужское отделение №8608 ПАО Сбербанк г. Калуга</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Номер расчетного счета</td>
+                                                        <td>40702810977020102638</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Номер корреспондентского счета банка </td>
+                                                        <td>30101810100000000612</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>БИК банка получателя</td>
+                                                        <td>042908612</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Адрес местонахождения Общества</td>
+                                                        <td>150014, г. Ярославль, ул. Рыбинская, д.20</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="subscribtion">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                <div class="d-flex justify-content-center align-items-center subscribtion-heading"><i class="subscribtion-heading-icon"></i><span class="subscribtion-heading-text">Подпишитесь&nbsp;на&nbsp;новости:</span></div>
+                <form class="subscribtion-form"><input class="subscribtion-form-input" type="email" placeholder="Ваш e-mail" /><input class="subscribtion-form-button" type="submit" value="Подписаться" /></form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="separator gradient"></div>
+        <div class="row footer-content">
+            <div class="d-none d-lg-block col-lg-9 col-xxl-6 footer-content-left">
+                <div class="row">
+                    <div class="col footer-content-column"><span class="footer-content-column-heading">Керамика Будущего</span>
+                        <div class="footer-content-column-separator"></div>
+                        <ul class="footer-content-column-list">
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">О компании</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Новости</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Преимущества </a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Реквизиты</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-content-column"><span class="footer-content-column-heading">Покупателю</span>
+                        <div class="footer-content-column-separator"></div>
+                        <ul class="footer-content-column-list">
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Политика конфиденциальности</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Как заказать</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Оплата и доставка</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Возврат</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Обратная связь</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Вопрос-ответ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-content-column"><span class="footer-content-column-heading">Полезная информация</span>
+                        <div class="footer-content-column-separator"></div>
+                        <ul class="footer-content-column-list">
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Статьи</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Сертификаты</a></li>
+                            <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Способы укладки</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xxl-3 offset-xxl-3 footer-content-right">
+                <div class="row">
+                    <div class="col-md-7 col-lg-12"><span class="footer-content-column-heading">Следите за нами в соцсетях</span>
+                        <div class="footer-content-column-links"><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/youtube.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/ok.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/vk.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/facebook.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/twitter.svg)"></i></a></div>
+                    </div>
+                    <div class="d-none d-md-block col offset-md-1 offset-lg-0 footer-content-column"><span class="footer-content-column-heading">Принимаем к оплате</span>
+                        <div class="footer-content-column-links"><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/visa.svg)"></i><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/mastercard.svg)"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="row justify-content-between py-3"><span class="col-auto footer-copyright-info">© 2018 Все права защищены.</span>
+            <div class="col-auto footer-copyright-developers"><span>Разработка сайта — </span><a class="footer-copyright-developers-link" href="#" target="blank">АйТи-Эскорт</a></div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="scripts/swiper.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.js"> </script>
+<script type="text/javascript" src="scripts/datepicker.js"></script>
+<script type="text/javascript" src="scripts/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+
+</html>

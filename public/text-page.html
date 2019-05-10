@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>текстовая страница</title>
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="d-none d-lg-block top-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a data-fancybox="data-fancybox" data-src="#popup-ask-question" href="javascript:;">Задать вопрос</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-line">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto"><i class="d-inline-block d-lg-none middle-line-burger-menu"></i>
+                        <div class="logo"><a class="logo-link" href="#"><img class="logo-img" src="assets/img/logo.svg" alt="logo" /></a></div>
+                        <div class="d-none d-lg-inline-block description"><span class="description-text">Интернет-магазин<br>профессионального керамогранита</span></div>
+                        <div class="nav-list-scrolled-wrapper">
+                            <ul class="d-none row nav-list-scrolled">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Готовые решения</a></li>
+                                <li><a href="#">Шоурум</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form class="d-none d-sm-inline-block search-form align-middle"><i class="d-none d-sm-inline-block d-xl-none search-form-icon"></i><input class="d-none d-xl-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-none d-xl-block search-form-button" type="submit" value="" /></form>
+                        <div class="hot-line align-middle"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a>
+                            <p class="d-lg-block d-none hot-line-text">Звонок по России бесплатный</p>
+                            <div class="shopping-basket"><a href="#"><span class="shopping-basket-count">17</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="d-none d-lg-block bottom-nav">
+            <div class="container">
+                <ul class="row justify-content-xl-start justify-content-xxl-center bottom-nav-list">
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Каталог</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Готовые решения</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Шоурум</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Где купить</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Партнерам</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown d-lg-none">
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <form class="search-form search-form-dropdown"><input class="d-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-block search-form-button" type="submit" value="" /></form>
+                <ul class="col-auto dropdown-list">
+                    <li><a class="dropdown-list-link isparent" href="#">Каталог</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог <span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Hello</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link isparent" href="#">Готовые решения</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог<span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Технический керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link" href="#">Шоурум</a></li>
+                    <li><a class="dropdown-list-link" href="#">Где купить</a></li>
+                    <li><a class="dropdown-list-link" href="#">Партнерам</a></li>
+                    <li><a class="dropdown-list-link" href="#">О компании</a></li>
+                    <li><a class="dropdown-list-link" href="#">Полезная информация</a></li>
+                    <li><a class="dropdown-list-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hot-line-tel-dropdown-wrapper">
+                <div class="container"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="col-sm-12 col-lg-8 col-xl-9 site-breadcrumbs">
+                <div class="site-breadcrumbs-item"><a href="#">Главная</a> /</div>
+                <div class="site-breadcrumbs-item"><span>Текстовая страница</span></div>
+            </div>
+            <h1 class="page-h1">заголовок 1</h1>
+            <div class="text-page clearfix">
+                <p>Один из сильнейших конкурентов на российском рынке
+                    строительных материалов – компания Керамика Будущего,
+                    которая, несмотря на молодость, уже успела выбиться
+                    в лидеры среди производителей керамического гранита.
+                    Открытие завода компании состоялось в начале сентября
+                    2014 года в Калужской области. </p>
+                <p>Один из сильнейших конкурентов на российском рынке
+                    строительных материалов – компания Керамика Будущего,
+                    которая, несмотря на молодость, уже успела выбиться
+                    в лидеры среди производителей керамического гранита.
+                    Открытие завода компании состоялось в начале сентября
+                    2014 года в Калужской области.</p>
+                <h2>заголовок 2</h2>
+                <p>Один из сильнейших конкурентов на российском рынке
+                    <a href="#">строительных материалов</a> – компания Керамика Будущего, которая,
+                    несмотря на молодость, уже успела выбиться в лидеры среди
+                    производителей керамического гранита. Открытие завода компании
+                    состоялось в начале сентября 2014 года в Калужской области. </p>
+                <h3>заголовок 3</h3>
+                <ul>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                </ul>
+                <ol>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                    <li>Пункт</li>
+                </ol>
+                <blockquote>
+                    <p>Один из сильнейших конкурентов на российском рынке строительных
+                        материалов – компания Керамика Будущего, которая, несмотря на молодость,
+                        уже успела выбиться в лидеры среди производителей керамического гранита.
+                        Открытие завода компании состоялось в начале сентября 2014 года в Калужской области. </p>
+                    <footer><cite>Наталья Любимова</cite></footer>
+                </blockquote><img class="left-image" src="assets/img/sample-image-1.jpg" alt="sampe image" />
+                <h1>Изображение слева</h1>
+                <p>Вскоре ему повстречался коварный составитель рекламных текстов, напоивший его языком и речью и заманивший в свое агенство, которое
+                    использовало его снова и снова в своих проектах. И если его не переписали,
+                    то живет он там до сих пор.Далеко-далеко за словесными горами в стране гласных
+                    и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах
+                    на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит
+                    по всей стране и обеспечивает ее всеми необходимыми правилами. </p>
+                <p>Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами,
+                    ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного
+                    текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс
+                    предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой,
+                    но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал
+                    инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор,
+                    бросил он последний взгляд назад, на силуэт своего родного города Буквоград.</p>
+                <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                    знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                    Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+                    Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад,
+                    на силуэт своего родного города Буквоград, на заголовок деревни Алфавит
+                    и на подзаголовок своего переулка Строчка.</p>
+                <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                    знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                    Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+                    Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад,
+                    на силуэт своего родного города Буквоград, на заголовок деревни Алфавит
+                    и на подзаголовок своего переулка Строчка.</p>
+                <p>Вскоре ему повстречался коварный составитель рекламных текстов, напоивший его языком и речью и заманивший в свое агенство, которое использовало его снова
+                    и снова в своих проектах. И если его не переписали, то живет он там до сих пор.
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                    Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                    Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. </p><img class="right-image" src="assets/img/sample-image-1.jpg" alt="sampe image" />
+                <h1>Изображение справа</h1>
+                <p>Вскоре ему повстречался коварный составитель рекламных текстов, напоивший его языком и речью и заманивший в свое агенство, которое
+                    использовало его снова и снова в своих проектах. И если его не переписали,
+                    то живет он там до сих пор.Далеко-далеко за словесными горами в стране гласных
+                    и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах
+                    на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит
+                    по всей стране и обеспечивает ее всеми необходимыми правилами. </p>
+                <p>Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами,
+                    ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного
+                    текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс
+                    предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой,
+                    но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал
+                    инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор,
+                    бросил он последний взгляд назад, на силуэт своего родного города Буквоград.</p>
+                <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                    знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                    Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+                    Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад,
+                    на силуэт своего родного города Буквоград, на заголовок деревни Алфавит
+                    и на подзаголовок своего переулка Строчка.</p>
+                <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                    знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                    Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+                    Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад,
+                    на силуэт своего родного города Буквоград, на заголовок деревни Алфавит
+                    и на подзаголовок своего переулка Строчка.</p>
+                <p>Вскоре ему повстречался коварный составитель рекламных текстов, напоивший его языком и речью и заманивший в свое агенство, которое использовало его снова
+                    и снова в своих проектах. И если его не переписали, то живет он там до сих пор.
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                    Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                    Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
+                <div class="responsive-table">
+                    <table>
+                        <tr>
+                            <th>Название</th>
+                            <th>Название</th>
+                            <th>Название</th>
+                            <th>Название</th>
+                        </tr>
+                        <tr>
+                            <td>Пункт</td>
+                            <td>Пункт</td>
+                            <td>Пункт</td>
+                            <td>Пункт</td>
+                        </tr>
+                        <tr>
+                            <td>01.03.17</td>
+                            <td>325 355,40</td>
+                            <td><a href="#">235333 от 01.01.18</a></td>
+                            <td><a href="#">235333 от 01.01.18</a></td>
+                        </tr>
+                        <tr>
+                            <td>01.03.17</td>
+                            <td>325 355,40</td>
+                            <td><a href="#">235333 от 01.01.18</a></td>
+                            <td><a href="#">235333 от 01.01.18</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="subscribtion">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center subscribtion-heading"><i class="subscribtion-heading-icon"></i><span class="subscribtion-heading-text">Подпишитесь&nbsp;на&nbsp;новости:</span></div>
+                    <form class="subscribtion-form"><input class="subscribtion-form-input" type="email" placeholder="Ваш e-mail" /><input class="subscribtion-form-button" type="submit" value="Подписаться" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="separator gradient"></div>
+            <div class="row footer-content">
+                <div class="d-none d-lg-block col-lg-9 col-xxl-6 footer-content-left">
+                    <div class="row">
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Керамика Будущего</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">О компании</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Новости</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Преимущества </a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Реквизиты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Покупателю</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Политика конфиденциальности</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Как заказать</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Оплата и доставка</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Возврат</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Обратная связь</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Полезная информация</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Статьи</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Сертификаты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Способы укладки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xxl-3 offset-xxl-3 footer-content-right">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-12"><span class="footer-content-column-heading">Следите за нами в соцсетях</span>
+                            <div class="footer-content-column-links"><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/youtube.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/ok.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/vk.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/facebook.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/twitter.svg)"></i></a></div>
+                        </div>
+                        <div class="d-none d-md-block col offset-md-1 offset-lg-0 footer-content-column"><span class="footer-content-column-heading">Принимаем к оплате</span>
+                            <div class="footer-content-column-links"><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/visa.svg)"></i><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/mastercard.svg)"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row justify-content-between py-3"><span class="col-auto footer-copyright-info">© 2018 Все права защищены.</span>
+                <div class="col-auto footer-copyright-developers"><span>Разработка сайта — </span><a class="footer-copyright-developers-link" href="#" target="blank">АйТи-Эскорт</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

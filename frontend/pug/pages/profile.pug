@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="shortcut icon", href="img/favicon/favicon.ico" type="image/x-icon")
+    link(rel="stylesheet", href="styles/jquery-ui.css")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/swiper.min.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Профиль
+  body
+    include ../components/header.pug
+    .page-profile
+      .container
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="/">Главная</a> / 
+              .site-breadcrumbs-item
+                span Профиль
+
+        main
+          .header-page
+            h1.page-h1 Профиль
+          
+          .partner-account
+            .row.justify-content-between
+              include ../components/side-menu.pug
+
+                
+              
+              .col-12.col-xl-9
+                include ../components/panel-inform.pug
+                .profile-wrapper
+                  .row
+                    .col-lg-4
+                      .profile-img(style="background-image: url(assets/img/user-ava.jpg)")
+                    .col-lg-8
+                      .nav-table.nav-table-profile.mt-none
+                        table
+                          tbody
+                            tr
+                              td Ф.И.О.
+                              td
+                                strong Александр Федорович Смирнов
+                            tr
+                              td Е-mail
+                              td seller 7777@mail.ru
+                            tr
+                              td ИНН
+                              td 7604049153
+                            tr
+                              td КПП
+                              td 7604049153
+                            tr
+                              td ОГРН
+                              td 1027600680744
+                            tr
+                              td Наименование банка получателя
+                              td Калужское отделение №8608  ПАО Сбербанк г. Калуга
+                            tr
+                              td Номер расчетного счета
+                              td 40702810977020102638
+                            tr
+                              td Номер корреспондентского счета банка 
+                              td 30101810100000000612
+                            tr
+                              td БИК банка получателя
+                              td 042908612
+                            tr
+                              td Адрес местонахождения Общества
+                              td 150014, г. Ярославль, ул. Рыбинская, д.20
+  include ../components/footer.pug
+    
+  script(type="text/javascript" src="scripts/jquery.min.js")
+  script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+  script(type="text/javascript" src="scripts/swiper.min.js")
+  script(type="text/javascript" src="scripts/jquery-ui.js")  
+  script(type="text/javascript" src="scripts/datepicker.js")
+  script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+  script(type="text/javascript" src="scripts/script.js")

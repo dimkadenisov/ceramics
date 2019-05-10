@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Каталог-2</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="d-none d-lg-block top-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Покупателю</a></li>
+                            <li><a href="#">Полезная информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="top-nav-list">
+                            <li><a data-fancybox="data-fancybox" data-src="#popup-ask-question" href="javascript:;">Задать вопрос</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-line">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto"><i class="d-inline-block d-lg-none middle-line-burger-menu"></i>
+                        <div class="logo"><a class="logo-link" href="#"><img class="logo-img" src="assets/img/logo.svg" alt="logo" /></a></div>
+                        <div class="d-none d-lg-inline-block description"><span class="description-text">Интернет-магазин<br>профессионального керамогранита</span></div>
+                        <div class="nav-list-scrolled-wrapper">
+                            <ul class="d-none row nav-list-scrolled">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Готовые решения</a></li>
+                                <li><a href="#">Шоурум</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form class="d-none d-sm-inline-block search-form align-middle"><i class="d-none d-sm-inline-block d-xl-none search-form-icon"></i><input class="d-none d-xl-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-none d-xl-block search-form-button" type="submit" value="" /></form>
+                        <div class="hot-line align-middle"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a>
+                            <p class="d-lg-block d-none hot-line-text">Звонок по России бесплатный</p>
+                            <div class="shopping-basket"><a href="#"><span class="shopping-basket-count">17</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="d-none d-lg-block bottom-nav">
+            <div class="container">
+                <ul class="row justify-content-xl-start justify-content-xxl-center bottom-nav-list">
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Каталог</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Готовые решения</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Шоурум</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Где купить</a></li>
+                    <li class="bottom-nav-list-item"><a class="bottom-nav-list-item-link" href="#">Партнерам</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown d-lg-none">
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <form class="search-form search-form-dropdown"><input class="d-block search-form-input" type="text" value="" placeholder="Поиск по наименованию товара..." /><input class="d-block search-form-button" type="submit" value="" /></form>
+                <ul class="col-auto dropdown-list">
+                    <li><a class="dropdown-list-link isparent" href="#">Каталог</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог <span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Hello</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link isparent" href="#">Готовые решения</a>
+                        <div class="dropdown-submenu"><a class="previous" href="#">Каталог<span class="back">Назад</span></a>
+                            <ul class="col-auto dropdown-list">
+                                <li><a class="dropdown-list-link px-0" href="#">Технический керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративный керамогранит</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Ступени, плинтус, мозайка</a></li>
+                                <li><a class="dropdown-list-link px-0" href="#">Декоративные элементы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-list-link" href="#">Шоурум</a></li>
+                    <li><a class="dropdown-list-link" href="#">Где купить</a></li>
+                    <li><a class="dropdown-list-link" href="#">Партнерам</a></li>
+                    <li><a class="dropdown-list-link" href="#">О компании</a></li>
+                    <li><a class="dropdown-list-link" href="#">Полезная информация</a></li>
+                    <li><a class="dropdown-list-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hot-line-tel-dropdown-wrapper">
+                <div class="container"><a class="hot-line-tel" href="tel:88000000000">8 <span>800 </span>000 00 00</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-xl-9">
+                    <div class="site-breadcrumbs">
+                        <div class="site-breadcrumbs-item"><a href="#">Главная</a> /</div>
+                        <div class="site-breadcrumbs-item"><a href="#">Каталог</a> /</div>
+                        <div class="site-breadcrumbs-item"><span>Декорированный керамогранит</span></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="page-h1">Декорированный керамогранит</h1>
+            <div class="catalog-2">
+                <form class="catalog-filter catalog-filter-closed" action="">
+                    <div class="catalog-filter-heading catalog-filter-heading-closed"><span>Подобрать по параметрам</span></div>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="catalog-filter-part"><span class="catalog-filter-part-name">Тип поверхности:</span>
+                                <div class="catalog-filter-surfaces"><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img catalog-filter-img-new" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label><label class="catalog-filter-label"><input class="catalog-filter-checkbox" type="checkbox" />
+                                        <div class="catalog-filter-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                    </label>
+                                    <ul class="catalog-filter-surfaces-characteristics-list">
+                                        <li class="catalog-filter-surfaces-characteristics-list-item">Мягкое лаппатирование Lappato/LMR</li>
+                                        <li class="catalog-filter-surfaces-characteristics-list-item">Второй тип поверхности</li>
+                                        <li class="catalog-filter-surfaces-characteristics-list-item">Волшебный эффект</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <div class="catalog-filter-part"><span class="catalog-filter-part-name">Цвет:</span><label class="catalog-filter-container">Белый<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Черный<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Светло-серый<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Темно-серый<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Голубой<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Желтый<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Песочный<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label></div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="catalog-filter-part"><span class="catalog-filter-part-name">Размер:</span>
+                                <div class="catalog-filter-sizes"><label class="catalog-filter-container">1200x1200<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x600<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x599<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x398<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x295<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x195<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">1200x60<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">600x600<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">600x300<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">600x95<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">600x25<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">300x395<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">300x358<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">300x400<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">300x300<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">70x70<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">60x60<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <div class="catalog-filter-part"><span class="catalog-filter-part-name">Стиль:</span><label class="catalog-filter-container">Классика<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Современный<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Модерн<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Хай-тек<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Эклектика<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label><label class="catalog-filter-container">Скандинавский<input class="catalog-filter-checkbox" type="checkbox" /><span class="catalog-filter-checkmark"></span></label></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="catalog-filter-buttons"><input class="catalog-filter-button catalog-filter-button-submit" type="submit" value="Подобрать" /><input class="catalog-filter-button catalog-filter-button-reset" type="reset" value="Сбросить" /></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item grid-big"> <a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Колла</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Агат</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Базальт</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                    <p class="grid-item-text-description"> </p>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Вуд эго</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item grid-tall"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Вуд классик</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item grid-tall"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Калкатта</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Ультра белый</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Оксидо</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Импередатор</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Гранит</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Савойи</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Сэндстоун</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Травертин</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                        <div class="grid-item grid-long"><a class="grid-item-content" href="#">
+                                <div class="grid-item-overlay"></div>
+                                <div class="grid-item-img" style="background-image: url(assets/img/sample-image-1.jpg)"></div>
+                                <div class="grid-item-text"><span class="grid-item-text-heading">Цемент</span>
+                                    <div class="grid-item-text-button"><i class="grid-item-text-button-icon"></i></div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="subscribtion">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center subscribtion-heading"><i class="subscribtion-heading-icon"></i><span class="subscribtion-heading-text">Подпишитесь&nbsp;на&nbsp;новости:</span></div>
+                    <form class="subscribtion-form"><input class="subscribtion-form-input" type="email" placeholder="Ваш e-mail" /><input class="subscribtion-form-button" type="submit" value="Подписаться" /></form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="separator gradient"></div>
+            <div class="row footer-content">
+                <div class="d-none d-lg-block col-lg-9 col-xxl-6 footer-content-left">
+                    <div class="row">
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Керамика Будущего</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">О компании</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Новости</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Преимущества </a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Реквизиты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Покупателю</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Политика конфиденциальности</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Как заказать</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Оплата и доставка</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Возврат</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Обратная связь</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-content-column"><span class="footer-content-column-heading">Полезная информация</span>
+                            <div class="footer-content-column-separator"></div>
+                            <ul class="footer-content-column-list">
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Статьи</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Сертификаты</a></li>
+                                <li class="footer-content-column-list-item"><a class="footer-content-column-list-item-link" href="#">Способы укладки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xxl-3 offset-xxl-3 footer-content-right">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-12"><span class="footer-content-column-heading">Следите за нами в соцсетях</span>
+                            <div class="footer-content-column-links"><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/youtube.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/ok.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/vk.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/facebook.svg)"></i></a><a class="d-inline-block" href="#" target="blank"><i class="footer-content-column-links-icon socials" style="background-image: url(assets/img/icons/twitter.svg)"></i></a></div>
+                        </div>
+                        <div class="d-none d-md-block col offset-md-1 offset-lg-0 footer-content-column"><span class="footer-content-column-heading">Принимаем к оплате</span>
+                            <div class="footer-content-column-links"><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/visa.svg)"></i><i class="d-inline-block footer-content-column-links-icon payment" style="background-image: url(assets/img/icons/mastercard.svg)"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row justify-content-between py-3"><span class="col-auto footer-copyright-info">© 2018 Все права защищены.</span>
+                <div class="col-auto footer-copyright-developers"><span>Разработка сайта — </span><a class="footer-copyright-developers-link" href="#" target="blank">АйТи-Эскорт</a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

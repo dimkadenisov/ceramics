@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/swiper.min.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Корзина
+  body
+    include ../components/header.pug
+    .container
+      main
+        .rowscripts
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                span Корзина
+        h1.page-h1 Корзина
+        .basket
+          .row
+            .col-12
+              .basket-items-table
+                table
+                  tbody
+                    tr.d-none.d-lg-table-row
+                      th №
+                      th Товар
+                      th Цена
+                      th Количество
+                      th Сумма
+                      th
+                    tr.clearfix.basket-item
+                      td.d-none.d-lg-table-cell
+                        .basket-item-number 
+                          span 1
+                      td
+                        .basket-item-product
+                          .basket-item-img
+                              a(href="#", style="background-image:url(assets/img/sample-image-1.jpg)")
+                              span.basket-item-img-sale -25%
+                          .basket-item-name
+                            span 
+                              a.basket-item-name-link(href="#") Колла MR Серо-черный в полосочку
+                              span.basket-item-name-tooltip i
+                                span.d-none.basket-item-name-tooltip-text Выбранный объем плитки будет набран из разных партий.
+                                  |
+                                  |
+                                  a.basket-item-name-tooltip-text-link(href="#") Связаться с менеджером
+                            span.basket-item-name-size 1200x1200
+                            |
+                            |
+                            span.basket-item-name-surface медовая поверхность
+                      td.basket-item-price-position
+                        .basket-item-price 
+                          span.basket-item-price-sale 91&nbsp990
+                            span.rubl ₽ 
+                            |
+                            |
+                          |
+                          |
+                          span.basket-item-price-price 91&nbsp490
+                            |
+                            |
+                            span.rubl ₽
+                            |
+                            |
+                          span.basket-item-price-notice цена за м²
+                      td.basket-item-amount-position
+                        .basket-item-amount
+                          input(type="text", value="1").basket-item-amount-input
+                          a(href="#").basket-item-amount-button.basket-item-amount-plus +
+                          a(href="#").basket-item-amount-button.basket-item-amount-minus -
+                      td.basket-item-total-position
+                        .basket-item-total 
+                          span.d-inline.d-sm-none.basket-item-total-text Сумма:
+                          |
+                          |
+                          span 122&nbsp990
+                            span.rubl ₽ 
+                      td.basket-item-close-position
+                        .basket-item-close
+                          a
+                            svg(width="18px", height="18px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+                              line.basket-item-close-icon(x1="1" y1="1" x2="16" y2="16")
+                              line.basket-item-close-icon(x1="1" y1="16" x2="16" y2="1")
+                    tr.clearfix.basket-item
+                      td.d-none.d-lg-table-cell
+                        .basket-item-number 
+                          span 1
+                      td
+                        .basket-item-product
+                          .basket-item-img
+                              a(href="#", style="background-image:url(assets/img/sample-image-1.jpg)")
+                              span.basket-item-img-sale -25%
+                          .basket-item-name
+                            span 
+                              a.basket-item-name-link(href="#") Колла MR Серо-черный в полосочку
+                              span.basket-item-name-tooltip i
+                                span.d-none.basket-item-name-tooltip-text Выбранный объем плитки будет набран из разных партий.
+                                  |
+                                  |
+                                  a.basket-item-name-tooltip-text-link(href="#") Связаться с менеджером
+                            span.basket-item-name-size 1200x1200
+                            |
+                            |
+                            span.basket-item-name-surface медовая поверхность
+                      td.basket-item-price-position
+                        .basket-item-price 
+                          span.basket-item-price-sale 91&nbsp990
+                            span.rubl ₽ 
+                            |
+                            |
+                          |
+                          |
+                          span.basket-item-price-price 91&nbsp490
+                            |
+                            |
+                            span.rubl ₽
+                            |
+                            |
+                          span.basket-item-price-notice цена за м²
+                      td.basket-item-amount-position
+                        .basket-item-amount
+                          input(type="text", value="1").basket-item-amount-input
+                          a(href="#").basket-item-amount-button.basket-item-amount-plus +
+                          a(href="#").basket-item-amount-button.basket-item-amount-minus -
+                      td.basket-item-total-position
+                        .basket-item-total 
+                          span.d-inline.d-sm-none.basket-item-total-text Сумма:
+                          |
+                          |
+                          span 122&nbsp990
+                            span.rubl ₽ 
+                      td.basket-item-close-position
+                        .basket-item-close
+                          a
+                            svg(width="18px", height="18px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+                              line.basket-item-close-icon(x1="1" y1="1" x2="16" y2="16")
+                              line.basket-item-close-icon(x1="1" y1="16" x2="16" y2="1")
+          .row
+            .col-12
+              .basket-bottom
+                .basket-promocode
+                  input(type="text", placeholder="Ввести промокод...")
+                  a(href="#") %
+                .basket-summary
+                  .basket-summary-line
+                    span.basket-summary-text Итого:
+                    |
+                    |
+                    span.basket-summary-price 91&nbsp490
+                      span.rubl ₽ 
+                      |
+                      |
+                    |
+                    |
+                    span.basket-summary-price-sale 91&nbsp990
+                      span.rubl ₽
+                  .basket-summary-line
+                    |Экономия:
+                    |
+                    |
+                    span.basket-summary-price-economy 300
+                      span.rubl ₽
+                  .basket-summary-line 
+                    |Вес заказа:
+                    |
+                    |
+                    span.basket-summary-weight 200
+                    |
+                    |
+                    |кг
+                  a.basket-buy-button(href="#") Оформить заказ
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

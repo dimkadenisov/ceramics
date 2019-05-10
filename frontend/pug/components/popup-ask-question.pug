@@ -1,0 +1,15 @@
+#popup-ask-question.popup-content
+  //- svg.popup-content-close-icon(width="18px", height="18px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+  //-   line(x1="1" y1="1" x2="16" y2="16")
+  //-   line(x1="1" y1="16" x2="16" y2="1")
+  span.popup-content-heading Задать вопрос
+  form.popup-content-form
+    input.popup-content-form-input(type="text", placeholder="Ваше имя")
+    input.popup-content-form-input(type="tel", placeholder="Ваш телефон")
+    input.popup-content-form-input(type="email", placeholder="Ваш e-mail")
+    textarea.popup-content-form-textarea(type="text", placeholder="Ваш вопрос")
+    button.popup-content-form-button ОТПРАВИТЬ
+    label.catalog-filter-container Нажимая кнопку «Отправить»,
+      |я даю свое согласие на обработку персональных данных
+      input.catalog-filter-checkbox(type="checkbox")
+      span.catalog-filter-checkmark

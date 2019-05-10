@@ -1,0 +1,120 @@
+.popup-payout {
+  display: none;
+  position: relative;
+  max-width: 650px;
+  padding: 70px 80px;
+  margin: 30px;
+  background: $white;
+  // background: beige;
+  overflow-y: auto;
+  z-index: 151;
+
+  & > span {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 40px 0;
+    color: $gray-200;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    & > span {
+      color: $orange;
+      font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+    }
+  }
+
+  & > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 7.5px);
+    height: 48px;
+    text-align: center;
+    // padding: 10px;
+    border: 2px solid $gray-50;
+    color: $gray-700;
+    font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: border 0.1s;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $orange;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 10px 0 0;
+    }
+
+    &:first-of-type {
+      margin: 0 7.5px 30px 0;
+
+      &::before {
+        content: url(../../assets/img/icons/credit-card.svg);
+      }
+    }
+
+    &:last-of-type {
+      margin: 0 0 30px 7.5px;
+
+      &::before {
+        content: url(../../assets/img/icons/invoice.svg);
+      }
+    }
+  }
+
+  &-submit {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    background: $gray-700;
+    border: none;
+    color: $white;
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup-payout {
+    padding: 40px 30px;
+
+    & > span {
+      & > span {
+        display: block;
+      }
+    }
+
+    & > a {
+      &:first-of-type,
+      &:last-of-type {
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .popup-payout {
+    padding: 20px 15px;
+    margin: 15px;
+
+    & > span {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+}

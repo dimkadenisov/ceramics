@@ -1,0 +1,94 @@
+.contacts-grid {
+  .grid {
+    &-item {
+      &-content {
+        background: $gray-600;
+      }
+
+      &-text {
+        &-heading {
+          display: block;
+          margin: 0 0 20px 0;
+        }
+
+        &-description {
+          display: block;
+          padding: 0;
+          margin: 0 0 8px 0;
+
+          a {
+            color: $white;
+          }
+        }
+
+        &-place {
+          margin: 0 0 20px 0;
+
+          &-heading {
+            display: block;
+            margin: 0 0 10px 0;
+            color: $white;
+            font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+            font-size: 17px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contacts-grid {
+    .grid {
+      &-item {
+        &-content {
+          background: none;
+        }
+
+        &-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 15px;
+
+          &-heading {
+            color: $white;
+            font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+            text-transform: uppercase;
+          }
+
+          &-description {
+            display: block;
+            padding: 0;
+            margin: 0 0 8px 0;
+
+            a {
+              color: $gray-700;
+            }
+          }
+
+          &-place {
+            &-heading {
+              color: $gray-700;
+            }
+          }
+        }
+      }
+
+      &-big,
+      &-tall {
+        .grid-item-text {
+          position: relative;
+          padding: 25px 0 0 0;
+
+          &-heading {
+            color: $gray-700;
+            font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}

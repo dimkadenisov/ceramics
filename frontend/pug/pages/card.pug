@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/swiper.min.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Карточка
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                <a href="#">Каталог</a> /
+              .site-breadcrumbs-item
+                <a href="#">Декоративный керамогранит</a> /
+              .site-breadcrumbs-item
+                span Колла
+        h1.page-h1 КорКерамогранит Колла Классикзина
+        .card-grid
+          .card-grid-swiper
+            .swiper-card.swiper-container
+              .swiper-wrapper
+                .swiper-slide.swiper-card-slide
+                  a.swiper-card-slide-img(style="background-image:url(assets/img/sample-image-1.jpg)", href="assets/img/sample-image-1.jpg", data-fancybox="gallery")
+                .swiper-slide.swiper-card-slide
+                  a.swiper-card-slide-img(style="background-image:url(assets/img/sample-image-1.jpg)", href="assets/img/sample-image-1.jpg", data-fancybox="gallery")
+                .swiper-slide.swiper-card-slide
+                  a.swiper-card-slide-img(style="background-image:url(assets/img/sample-image-1.jpg)", href="assets/img/sample-image-1.jpg", data-fancybox="gallery")
+                .swiper-slide.swiper-card-slide
+                  a.swiper-card-slide-img(style="background-image:url(assets/img/sample-image-1.jpg)", href="assets/img/sample-image-1.jpg", data-fancybox="gallery")
+                .swiper-slide.swiper-card-slide
+                  a.swiper-card-slide-img(style="background-image:url(assets/img/sample-image-1.jpg)", href="assets/img/sample-image-1.jpg", data-fancybox="gallery")
+              .d-flex.d-xl-none.swiper-catalog-pagination
+              .d-none.d-lg-block.swiper-catalog-button.swiper-catalog-button-prev
+              .d-none.d-lg-block.swiper-catalog-button.swiper-catalog-button-next
+            .d-none.d-xl-block.swiper-card-thumbs
+              .swiper-wrapper
+                .swiper-slide.swiper-card-thumbs-thumb 
+                  .swiper-card-thumbs-thumb-img(style="background-image:url(assets/img/sample-image-1.jpg)")
+                .swiper-slide.swiper-card-thumbs-thumb 
+                  .swiper-card-thumbs-thumb-img(style="background-image:url(assets/img/sample-image-1.jpg)")
+                .swiper-slide.swiper-card-thumbs-thumb 
+                  .swiper-card-thumbs-thumb-img(style="background-image:url(assets/img/sample-image-1.jpg)")
+                .swiper-slide.swiper-card-thumbs-thumb 
+                  .swiper-card-thumbs-thumb-img(style="background-image:url(assets/img/sample-image-1.jpg)")
+                .swiper-slide.swiper-card-thumbs-thumb 
+                  .swiper-card-thumbs-thumb-img(style="background-image:url(assets/img/sample-image-1.jpg)")
+          .card-grid-price
+            span 900
+              span.rubl ₽
+              |/м²
+              |
+              span.card-grid-price-sale 1400
+                span.rubl ₽
+                |/м²
+            span.card-grid-price-notice Товар продается кратно упаковке
+            hr.d-none.d-xl-block.card-grid-separator
+          .card-grid-surface
+            span.card-grid-surface-heading Тип поверхности:
+              |
+              |
+              span.card-grid-surface-description Мягкое лаппатирование Lappato/LMR
+            .catalog-filter-surfaces
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+              label.catalog-filter-label
+                input(type="checkbox").catalog-filter-checkbox
+                .catalog-filter-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+          .card-grid-size 
+            span.card-grid-size-heading Размер:
+            |
+            |
+            label.card-grid-size-variant
+              input(type="checkbox")
+              span 1200x1200
+            |
+            |
+            label.card-grid-size-variant 
+              input(type="checkbox")
+              span 1200x600
+            |
+            |
+            label.card-grid-size-variant 
+              input(type="checkbox")
+              span 1200x1200
+            |
+            |
+            label.card-grid-size-variant 
+              input(type="checkbox")
+              span 1200x600
+            |
+            |
+            label.card-grid-size-variant 
+              input(type="checkbox")
+              span 1200x1200
+            |
+            |
+            label.card-grid-size-variant 
+              input(type="checkbox")
+              span 1200x600
+            hr.d-none.d-lg-block.d-xl-none.d-xxl-block.card-grid-separator
+          .card-grid-buy
+            .card-grid-buy-block
+              .card-grid-buy-options
+                .card-grid-buy-options-amount
+                  input(type="text", value="1").card-grid-buy-options-amount-input
+                  a(href="#").card-grid-buy-options-amount-button.card-grid-buy-options-amount-plus +
+                  a(href="#").card-grid-buy-options-amount-button.card-grid-buy-options-amount-minus -
+                a(href="#").card-grid-buy-options-buy-button добавить в корзину
+              a(href="#").card-grid-buy-options-calculate рассчитать количество
+            div
+              a(href="#").card-grid-buy-options-one-click-button купить в один клик
+            span.card-grid-buy-options-total
+              |
+              |Итого: 
+              span.card-grid-buy-options-total-price 99 700
+                span.rubl ₽
+              |
+              |
+              |(
+              span.card-grid-buy-options-total-amount 10
+              |
+              |
+              |м²)
+          .card-grid-info
+            span.card-grid-info-volume
+              span 1233 
+              |
+              |
+              |м² в упаковке
+            span.card-grid-info-price
+              span 433320
+                span.rubl ₽
+                |/упак.
+            .card-grid-info-icon.card-grid-info-icon-compare
+            .card-grid-info-icon.card-grid-info-icon-like
+            hr.d-none.d-lg-block.d-xl-none.card-grid-separator
+          a(href="#").card-grid-ready-cases
+            .card-grid-ready-cases-overlay
+            span готовое решение с этой плиткой
+            div(style="background-image:url(assets/img/sample-image-1.jpg)")
+          .card-grid-table.card-grid-table-left
+            table
+              tr
+                td Артикул:  
+                td CF9004A036PLR
+              tr
+                td Тип:
+                td Фоновая плита
+              tr
+                td Вид
+                td Керамический гранит
+              tr
+                td Поверхность:
+                td Полированная
+          .card-grid-table.card-grid-table-right
+            table
+              tr
+                td Назначение:  
+                td Стена/Пол
+              tr
+                td Цвет:
+                td Бежевый
+              tr
+                td Размер:
+                td 120x120, 60х60, 60х30
+              tr
+                td Толщина:
+                td 10.5
+        .row
+          .col-12
+            span.other-items-heading Другие товары из этой коллекции
+        .row.layout
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый Очень Хороший
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    span 1200x1200
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 1 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 109 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 100 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 1 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-surfaces
+                  ul.layout-item-surfaces-list
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                    li.layout-item-surfaces-list-item
+                      .layout-item-surfaces-list-item-img-container
+                        .layout-item-surfaces-list-item-img(style="background-image: url(assets/img/sample-image-1.jpg)")
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  |
+                  |
+                  span 3 790
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability В наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+          .col-12.col-sm-6.col-lg-4.col-xxl-3.layout-item-wrapper
+            .layout-item
+              .layout-item-content
+                .layout-item-thumb
+                  a(href="#", style="background-image: url(assets/img/sample-image-1.jpg)").layout-item-thumb-img
+                  a(href="#").layout-item-thumb-compare
+                    i
+                  a(href="#").layout-item-thumb-like
+                    i
+                a(href="#").layout-item-name Травертин PGR Медовый
+                .layout-item-select
+                    i.layout-item-select-button
+                    select
+                      option 1200x1200
+                      option 600x600
+                      option 600x300
+                span.layout-item-price 
+                  span.layout-item-price-sale 10 990
+                    span.rubl ₽ 
+                    |
+                    |
+                  |
+                  |
+                  span 9 590
+                    span.rubl ₽
+                  |/м²
+                span.layout-item-availability.layout-item-availability-not-available Нет в наличии
+                .layout-item-buy
+                  .layout-item-buy-counter
+                    input(type="text", value="1").layout-item-buy-counter-input
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-plus +
+                    a(href="#").layout-item-buy-counter-button.layout-item-buy-counter-minus -
+                  a(href="#").layout-item-buy-button Купить
+        .row
+          .col-12
+            a(href="#").show-more
+              span вся коллекция колла
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

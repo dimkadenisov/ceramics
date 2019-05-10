@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="styles/bootstrap.css")
+    link(rel="stylesheet", href="styles/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="styles/main.css")
+    title Контакты
+  body
+    include ../components/header.pug
+    .container
+      main
+        .row
+          .col-sm-12.col-lg-10.col-xl-9
+            .site-breadcrumbs
+              .site-breadcrumbs-item
+                <a href="#">Главная</a> /
+              .site-breadcrumbs-item
+                span.
+                  Контакты
+        h1.page-h1 Контакты
+        .contacts
+          .row
+            .grid.contacts-grid
+              .grid-sizer
+              .grid-item.grid-big 
+                .grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-18.png)")
+                  .grid-item-text
+                    span.grid-item-text-heading Производство
+                    span.grid-item-text-description.
+                      249000 Калужская обл., Боровский район, г. Балабаново, ул. Коммунальная, д. 2
+                    span.grid-item-text-description тел.:
+                      |
+                      |
+                      a(href="tel:+7 484 292 24 11") +7 484 292 24 11
+                    span.grid-item-text-description факс:
+                      |
+                      |
+                      a(href="tel:+7 48438 20990") +7 48438 20990
+              .grid-item.grid-tall
+                .grid-item-content
+                  .grid-item-overlay
+                  .grid-item-text
+                    span.d-block.d-sm-none.d-md-block.grid-item-text-heading Представители в&nbsp;регионах
+                    .grid-item-text-place
+                      span.grid-item-text-place-heading Представительство ООО "ФРИЛАЙТ" г. Москва
+                      span.grid-item-text-description Пресненская набережная 12, Башня Федерация "Восток"
+                      span.grid-item-text-description тел.:
+                        |
+                        |
+                        a(href="tel: +7 495 789-45-16") +7 495 789-45-16
+                      span.grid-item-text-description тел.:
+                        |
+                        |
+                        a(href="mailto:msk@uralgres.com") msk@uralgres.com
+                    .grid-item-text-place
+                      span.grid-item-text-place-heading Представительство ООО "ФРИЛАЙТ" г. Санкт-Петербург
+                      span.grid-item-text-description Пресненская набережная 12, Башня Федерация "Восток"
+                      span.grid-item-text-description тел.:
+                        |
+                        |
+                        a(href="tel: +7 495 789-45-16") +7 495 789-45-16
+                      span.grid-item-text-description тел.:
+                        |
+                        |
+                        a(href="mailto:msk@uralgres.com") msk@uralgres.com
+              .grid-item
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-11.png)")
+                  .grid-item-text
+                    span.grid-item-text-heading Фирменный выставочный зал
+                      |
+                      |
+                      strong Москва 
+              .grid-item
+                a(href="#").grid-item-content
+                  .grid-item-overlay
+                  .grid-item-img(style="background-image: url(assets/img/sample-image-9.png)")
+                  .grid-item-text
+                    span.grid-item-text-heading Фирменный выставочный зал
+                      |
+                      |
+                      strong Санкт-Петербург
+    include ../components/footer.pug
+    script(type="text/javascript" src="scripts/jquery.min.js")
+    script(type="text/javascript" src="scripts/masonry.pkgd.min.js")
+    script(type="text/javascript" src="scripts/swiper.min.js")
+    script(type="text/javascript" src="scripts/jquery.fancybox.min.js")
+    script(type="text/javascript" src="scripts/script.js")

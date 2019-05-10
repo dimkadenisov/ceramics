@@ -1,0 +1,734 @@
+//general header styles
+.site-header {
+  height: 216px;
+}
+
+.top-nav {
+  background: $gray-100;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    & > li {
+      display: inline-block;
+      margin: 8px 0;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    & > li > a {
+      font-family: "Merriweather", "Times New Roman", "Times", serif;
+      text-decoration: none;
+      line-height: 100%;
+      font-size: 12px;
+      color: $gray-500;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.middle-line {
+  height: 112px;
+  background: $white;
+  z-index: 150;
+
+  &-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &-burger-menu {
+    display: block;
+    height: 28px;
+    width: 28px;
+    padding: 6px 0;
+    margin: 0 15px 0 0;
+    background: center url("../../assets/img/icons/burger-menu.svg") no-repeat;
+    cursor: pointer;
+
+    &-close {
+      background: center url("../../assets/img/icons/close.svg") no-repeat;
+      background-size: 18px;
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+
+  &-link {
+    display: table-cell;
+    width: 260px;
+    height: 112px;
+    vertical-align: middle;
+
+    &-scrolled {
+      height: 64px;
+    }
+  }
+
+  &-img {
+    width: 100%;
+  }
+}
+
+.description {
+  margin: 0 0 0 60px;
+
+  &-text {
+    display: table-cell;
+    height: 112px;
+    vertical-align: middle;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-200;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+.search-form {
+  position: relative;
+  top: -14px;
+  width: 380px;
+  height: 48px;
+  font-size: 14px;
+  color: $gray-200;
+
+  &-scrolled {
+    top: 0;
+    width: 48px;
+  }
+
+  &-opened {
+    width: 350px;
+  }
+
+  &-icon {
+    position: absolute;
+    left: 0;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    background: center / 15px 15px url("../../assets/img/icons/search.svg") no-repeat;
+    border: 3px solid $gray-50;
+    cursor: pointer;
+
+    &-scrolled {
+      border: none;
+      background-size: 30px 30px;
+    }
+
+    &-opened {
+      padding: 0 15px;
+      border: none;
+      background: center / 15px 15px url("../../assets/img/icons/close.svg") no-repeat;
+      background-size: 18px 18px;
+    }
+  }
+
+  &-input {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    padding: 12px 50px 13px 15px;
+    box-sizing: border-box;
+    border: 3px solid $gray-50;
+    border-radius: 0;
+    font-size: 14px;
+    color: $gray-200;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+
+    &-opened {
+      left: 48px;
+      width: calc(100% - 48px);
+    }
+
+    &:focus {
+      outline: $orange auto 1px;
+      outline-offset: 1px;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    margin: 0 0 0 -48px;
+    background: center / 15px 15px url("../../assets/img/icons/search.svg") no-repeat;
+    cursor: pointer;
+    border: 3px solid $gray-50;
+    border-radius: 0;
+
+    &:focus {
+      outline: $orange auto 1px;
+    }
+
+    &:hover {
+      background: center / 15px 15px url("../../assets/img/icons/search.svg") no-repeat, $gray-100;
+    }
+  }
+}
+
+.hot-line {
+  display: inline-block;
+  margin: 30px 0 30px 150px;
+
+  &-scrolled {
+    margin: 0 0 0 14px;
+  }
+
+  &-tel {
+    display: inline-block;
+    font-size: 26px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    vertical-align: middle;
+    color: $gray-600;
+
+    &:hover {
+      text-decoration: none;
+      color: $gray-600;
+    }
+
+    & > span {
+      color: $orange;
+    }
+
+    &-scrolled {
+      height: 64px;
+      margin: 0 65px 0 0;
+      line-height: 64px;
+    }
+  }
+
+  &-text {
+    font-size: 14px;
+    font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+    color: $gray-700;
+  }
+}
+
+.shopping-basket {
+  display: inline-block;
+  position: absolute;
+  top: 122px;
+  right: 50px;
+  height: 40px;
+  width: 40px;
+  background: center url("../../assets/img/icons/shopping-basket.svg") no-repeat;
+  text-decoration: none;
+
+  & > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-scrolled {
+    // position: relative;
+    top: 12px;
+    right: 15px;
+
+    & .shopping-basket-count {
+      background: $gray-600;
+      color: $white;
+    }
+  }
+
+  &-count {
+    position: absolute;
+    top: 22px;
+    left: -7px;
+    min-width: 21px;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: $white;
+    font-size: 13px;
+    font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+    text-align: center;
+    color: $orange;
+
+    &-scrolled {
+      background: $gray-600;
+      color: $white;
+    }
+  }
+}
+
+.bottom-nav {
+  background-color: $gray-600;
+  padding: 20px 0;
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      position: relative;
+      margin: 0 63px 0 60px;
+
+      &:not(:last-child)::after {
+        position: absolute;
+        top: 4px;
+        right: -60px;
+        content: "";
+        width: 3px;
+        height: 16px;
+        background-color: $gray-400;
+      }
+
+      &:first-child {
+        margin: 0 63px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 60px;
+      }
+
+      &-link {
+        color: $white;
+        font-size: 14px;
+        font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          color: $orange;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 5;
+  background: $white;
+  box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-list-scrolled {
+  display: table-cell;
+  height: 64px;
+  // padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  list-style: none;
+
+  &-wrapper {
+    display: inline-block;
+  }
+
+  & li {
+    display: inline-block;
+  }
+
+  & li:not(:last-child) {
+    padding: 0 40px 0 0;
+  }
+
+  & a {
+    color: $gray-700;
+    font-size: 14px;
+    font-family: "Museo Sans Cyrl 500", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
+
+.dropdown {
+  position: fixed;
+  top: 64px;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 4;
+  transition: all 0.5s ease;
+
+  &-opened {
+    left: 0;
+    overflow: auto;
+  }
+
+  &-wrapper {
+    padding: 20px 0 0 0;
+    background: $white;
+  }
+
+  &-list {
+    min-height: 334px;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    background: $white;
+
+    & > li:not(:last-child) {
+      border-bottom: 1px solid $gray-50;
+    }
+
+    &-link {
+      display: block;
+      position: relative;
+      padding: 15px 0 15px 25px;
+      color: $gray-700;
+      font-size: 15px;
+      font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+      text-decoration: none;
+
+      &:hover {
+        color: $gray-700;
+        font-weight: 900;
+        background: $gray-100;
+        text-decoration: none;
+      }
+    }
+
+    & .dropdown-list {
+      padding: 10px 0 20px 0;
+
+      & .dropdown-list-link {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  &-submenu {
+    position: absolute;
+    top: 18px;
+    left: -140%;
+    width: 100%;
+    z-index: 4;
+    overflow: hidden;
+    background: $white;
+    transition: all 0.5s ease;
+
+    &-opened {
+      left: 0;
+      height: calc(100% - 18px);
+      overflow: visible;
+    }
+  }
+
+  & .search-form-input {
+    width: 100%;
+  }
+}
+
+.hot-line-tel-dropdown {
+  &-wrapper {
+    padding: 15px 0 15px 15px;
+    background: $gray-100;
+
+    & a {
+      display: block;
+      width: auto;
+      height: auto;
+      margin: 0;
+      text-indent: 0;
+      overflow: visible;
+      background: none;
+
+      & span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.isparent::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 0;
+  background: url("../../assets/img/icons/arrow-left.svg");
+  background-size: 14px;
+  content: "";
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.previous {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 5px 0 0 0;
+  color: $gray-700;
+  font-size: 15px;
+  font-family: "Museo Sans Cyrl 900", "Helvetica", "Arial", sans-serif;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $gray-700;
+    text-decoration: none;
+
+    & > .back {
+      color: $gray-700;
+    }
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(180deg);
+    background: url("../../assets/img/icons/arrow-left.svg");
+    background-size: 14px;
+    content: "";
+  }
+}
+
+.back {
+  display: block;
+  width: 100%;
+  margin: 15px 0 0 0;
+  color: $gray-200;
+  font-size: 15px;
+  font-family: "Museo Sans Cyrl 300", "Helvetica", "Arial", sans-serif;
+}
+
+//adaptive header styles
+
+@media screen and (max-width: 1579px) {
+  .description {
+    max-width: 200px;
+  }
+
+  .search-form {
+    width: 300px;
+
+    &-scrolled {
+      width: 48px;
+      margin: 0 -8px 0 0;
+    }
+
+    &-opened {
+      width: 350px;
+    }
+  }
+
+  .hot-line {
+    margin: 30px 0 30px 30px;
+
+    &-scrolled {
+      margin: 0 0 0 20px;
+    }
+
+    &-tel {
+      &-scrolled {
+        width: 50px;
+        height: 64px;
+        text-indent: -1000px;
+        overflow: hidden;
+        background: center url("../../assets/img/icons/phone.svg") no-repeat;
+        background-size: 48px 48px;
+      }
+    }
+  }
+
+  // .shopping-basket {
+  //   &-scrolled {
+  //     top: 0;
+  //   }
+  // }
+
+  .nav-list-scrolled > li:not(:last-child) {
+    padding: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .search-form {
+    width: 48px;
+
+    &-opened {
+      width: 350px;
+    }
+  }
+
+  .bottom-nav-list-item {
+    margin: 0 33px 0 30px;
+
+    &:first-child {
+      margin: 0 33px 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 30px;
+    }
+
+    &:not(:last-child)::after {
+      right: -30px;
+    }
+  }
+
+  .dropdown {
+    top: 64px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .site-header {
+    height: 64px;
+  }
+
+  .middle-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    box-shadow: 8.485px 8.485px 62px 0 rgba(0, 0, 0, 0.1);
+
+    &-burger-menu {
+      margin: 20px 20px 20px 0;
+    }
+  }
+
+  .logo {
+    margin: 0;
+
+    &-link {
+      height: 64px;
+      width: 190px;
+    }
+  }
+
+  .search-form {
+    top: 0;
+    width: 32px;
+    padding: 0;
+    // margin: 10px 0;
+
+    &-scrolled {
+      margin: 0;
+    }
+
+    &-dropdown {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 4px 0;
+    }
+
+    &-icon {
+      width: 40px;
+      // height: 40px;
+      height: 48px;
+      background: center / 15px 15px url("../../assets/img/icons/search-mobile.svg") no-repeat;
+      background-size: 30px 30px;
+      border: none;
+
+      &-scrolled {
+        margin: 0;
+      }
+    }
+  }
+
+  .hot-line {
+    margin: 0 0 0 20px;
+
+    &-tel {
+      width: 50px;
+      height: 64px;
+      margin: 0 65px 0 0;
+      text-indent: -10000px;
+      background: center url("../../assets/img/icons/phone.svg") no-repeat;
+      background-size: 48px 48px;
+
+      & > span {
+        display: none;
+      }
+    }
+  }
+
+  .shopping-basket {
+    top: 12px;
+    right: 14px;
+
+    &-count {
+      background: $gray-600;
+      color: $white;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .site-header {
+    height: 48px;
+  }
+
+  .middle-line {
+    height: 48px;
+
+    &-burger-menu {
+      margin: 10px 20px 10px 0;
+    }
+  }
+
+  .logo {
+    &-link {
+      height: 48px;
+      width: 170px;
+    }
+  }
+
+  .hot-line {
+    margin: 5px 0 0 0;
+
+    &-tel {
+      display: none;
+    }
+  }
+
+  .shopping-basket {
+    top: 7px;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+
+    &-count {
+      top: 16px;
+    }
+  }
+
+  .dropdown {
+    top: 48px;
+  }
+}
